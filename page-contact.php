@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
 <main class="contact-wrapper">
-		<div class="contact-title-wrapper"><h1 class="contact__title">Contact</h1></div>
+		<div class="contact-title-wrapper"><h1 class="contact__title"><?php the_title() ?></h1></div>
 		
 		<main class="contact__content">
 			<section class="contact-content__text">
-				<p>Would you like to learn more? Have a question about Richmond, VA DSA events or resources? Drop us a line! We can help to connect you with our projects and answer any questions – theoretical, practical or otherwise.</p>
+				<?php the_content() ?>
 			</section>
 
 			<section class="contact-content__form">
