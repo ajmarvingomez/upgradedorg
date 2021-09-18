@@ -22,7 +22,6 @@
 			      	</li><?php
 			    }
 			  }	
-			  reset_post_data();
 			  ?>
 			</ul>
 		</main>
