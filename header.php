@@ -40,7 +40,7 @@
 	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/about' ?>">About</a></li>
 	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/initiatives' ?>">Campaigns</a></li>
 	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/blog' ?>">Blog</a></li>
-	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/resource-page' ?>">Resources</a></li>
+	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/resources' ?>">Resources</a></li>
 	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/contact' ?>">Contact</a></li>
 	      <li class="nav-list__link"><a href="https://www.patreon.com/dsarichmond">Donate</a></li>
 	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/get-involved' ?>">Get Involved</a></li>
