@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
 <main class="resources-wrapper">
-		<div class="resources-title-wrapper"><h1 class="resources__title">Resources</h1></div>
+		<div class="resources-title-wrapper"><h1 class="resources__title"><?php the_title() ?></h1></div>
 
 		<section class="resources__text">
-			<p>Here you can find documents, forms, and assets related to Richmond DSA.</p>
+			<p><?php echo get_secondary_title() ?></p>
 		</section>
 		
 		<main class="resources__content">
