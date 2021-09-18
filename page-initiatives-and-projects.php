@@ -1,10 +1,8 @@
 <?php get_header() ?>
 
 <main class="projects-wrapper">
-		<div class="projects-title-wrapper"><h1 class="projects__title">Initiatives & Projects</h1></div>
+		<div class="projects-title-wrapper"><h1 class="projects__title"><?php the_title() ?></h1></div>
 		
-		
-
 		<main class="projects__content">
 			<ul class="projects-init__list">
 
@@ -21,9 +19,9 @@
 						</li><?php
 					}
 				}
-				?>
+				?> <!-- end entry -->
 				
-			</ul>
-		</main>
+			</ul> <!-- end list -->
+		</main> <!-- end content -->
 </main>
 <?php get_footer() ?>
