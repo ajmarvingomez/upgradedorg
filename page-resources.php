@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
 <main class="resources-wrapper">
-		<div class="resources-title-wrapper"><h1 class="resources__title"><?php the_title() ?></h1></div>
+		<div class="resources-title-wrapper"><h1 class="resources__title"><?php the_title(); ?></h1></div>
 
 		<section class="resources__text">
-			<p><?php echo get_secondary_title() ?></p>
+			<p><?php echo get_secondary_title(); ?></p>
 		</section>
 		
 		<main class="resources__content">
@@ -16,9 +16,9 @@
 			      $p->the_post(); ?>
 
 			      	<li class="resources__item">
-			      	  <div class="resources__link--1"><a href="#"><?php the_title(); ?></a></div>
-			      	  <p><?php the_content() ?></p>
-			      	  <div class="resources__link--2"><a href="#">Read <?php the_title() ?></a></div>
+			      	  <div class="resources__link--1"><a href="<?php echo get_post_permalink(); ?>"><?php the_title(); ?></a></div>
+			      	  <p><?php the_content(); ?></p>
+			      	  <div class="resources__link--2"><a href="<?php echo get_post_permalink(); ?>">Read <?php the_title() ?></a></div>
 			      	</li><?php
 			    }
 			  }	
