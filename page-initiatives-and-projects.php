@@ -12,7 +12,8 @@
 					while ($p->have_posts()) {
 						$p->the_post(); ?>
 						<li class="projects-init__list-item">
-							<h2 class="projects-item__title"><a href="#"><?php the_title(); ?></a></h2>
+							<h2 class="projects-item__title">
+								<a href="<?php echo get_post_permalink(); ?>"><?php the_title(); ?></a></h2>
 							<h3 class="projects-item__subtitle"><?php echo get_secondary_title(); ?></h3>
 							<div class="projects-item__summary"><?php the_excerpt() ?></div>
 							<h3 class="projects-item__cta"><?php the_shortlink("Learn more"); ?></h3>
@@ -24,4 +25,5 @@
 			</ul> <!-- end list -->
 		</main> <!-- end content -->
 </main>
+
 <?php get_footer() ?>
