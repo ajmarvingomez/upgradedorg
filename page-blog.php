@@ -1,10 +1,10 @@
 <?php get_header() ?>
 
 <main class="blog-wrapper">
-	<div class="blog-title-wrapper"><h1 class="blog__title"><?php the_title() ?></h1></div>
+	<div class="blog-title-wrapper"><h1 class="blog__title"><?php the_title(); ?></h1></div>
 
 	<section class="blog__text">
-		<p><?php echo get_secondary_title() ?></p>
+		<p><?php echo get_secondary_title(); ?></p>
 	</section>
 
 	<main class="blog-list-wrapper">
@@ -17,7 +17,7 @@
 				<section class="blog__entry">
 					<div class="blog-entry__title-wrapper">
 						<div class="blog-entry__category"><?php the_category(); ?></div>
-						<h1 class="blog-entry__title"><a href="#"><?php the_title(); ?></a></h1>
+						<h1 class="blog-entry__title"><a href="<?php echo get_post_permalink(); ?>"><?php the_title(); ?></a></h1>
 					</div>
 
 					<div class="blog-entry__metadata">
@@ -31,7 +31,7 @@
 					</article>
 
 					<div class="blog-entry__cta">
-						<?php the_shortlink("Read more"); ?>
+						<a href="<?php echo get_post_permalink(); ?>">Read more</a>
 					</div>
 				</section> <!-- end entry --> <?php
 			}
