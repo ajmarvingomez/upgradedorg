@@ -1,0 +1,120 @@
+/* Homepage CSS: */
+
+.homepage-wrapper {
+	position: relative;
+}
+
+// Landing:
+
+.homepage__landing {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	background: black;
+
+}
+
+.home-landing__text-wrapper {
+	display: grid;
+	grid-template-areas: 'backdrop roses'
+						 'line line'
+						 'subtitle subtitle';
+	//display: flex;
+	//flex-flow: column nowrap;
+	width: 83.33%;
+	margin: 0 auto;
+	@media screen and (max-width: 900px) {
+		grid-template-areas: 'backdrop'
+							 'line'
+							 'subtitle'
+							 'roses';
+	}
+}
+
+.backdrop {
+	grid-area: backdrop;
+}
+
+.home-landing__title {
+	display: inline-block;
+	margin: 0;
+	padding: .5em 0;
+//	font-family: "Raleway", sans-serif;
+	font-size: 72px;
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 1;
+	color: white;
+	@media screen and (max-width: 900px) {
+		font-size: 48px;
+	}
+}
+
+.text {
+	position: relative;
+	color: white;
+	background: black;
+	mix-blend-mode: lighten;
+}
+
+.text::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	background-image: linear-gradient(to bottom right, rgba(255,0,0,.1), rgba(255,0,0,.3)), url('../img/red-splatter.jpg');
+	background-position: center;
+	background-size: cover;
+	mix-blend-mode: multiply;
+}
+
+.home-landing__rose {
+	grid-area: roses;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	transform: translate(0, calc(-72px * .5));
+	img {
+		height: 100px;
+		padding: 0 .5rem;
+		&:nth-of-type(2) {
+			transform: translate(0, -30px);
+		}
+	}
+	@media screen and (max-width: 900px) {
+		transform: translate(0,0);
+		justify-content: center;
+	//	display: none;
+		img {
+			height: 75px;
+			padding-top: 2rem;
+		}
+	}
+}
+
+.home-landing__line {
+	grid-area: line;
+	width: 100%;
+	height: 2px;
+	background-color: white;
+}
+
+.home-landing__subtitle {
+	grid-area: subtitle;
+	font-family: "Raleway", sans-serif;
+	font-weight: 100;
+	font-size: 2.5rem;
+	font-style: italic;
+//	text-transform: uppercase;
+	color: white;
+	@media screen and (max-width: 900px) {
+		font-size: 1.75rem;
+	}
+}

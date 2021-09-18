@@ -1,0 +1,73 @@
+/* Join CSS */
+
+.join-wrapper {
+	position: relative;
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-template-areas:'text form' 
+						'text form';
+	margin: 0 8.33%;
+	padding-top: 72px;
+	@media screen and (max-width: 1000px) {
+		grid-template-columns: 1fr;
+		grid-template-areas: 'title'
+							 'text'
+							 'form';
+	}
+}
+
+.join-text-wrapper {
+	grid-area: text;
+}
+
+.join-title-wrapper {
+	position: relative;
+}
+
+.join__title {
+	position: relative;
+//	max-width: 800px;
+//	margin: 0 auto;
+	//margin-right:
+//	padding: 0 8.33%;
+	margin-right: 8.33%;
+	margin-bottom: .75em;
+	padding: .25em 0;
+	font-family: "Raleway", sans-serif;
+	font-size: 3rem;
+	&::before {
+		content: '';
+		position: absolute;
+		top: calc(100% - 8px);
+		left: 0;
+		display: block;
+		height: 6px;
+		width: 100%;
+		background-color: $dsared;
+		background-image: linear-gradient(to bottom right, rgba(255,0,0,.1), rgba(255,0,0,.3)), url('../img/red-splatter.jpg');
+		background-size: cover;
+		background-position: bottom left;
+	}
+	@media screen and (max-width: 800px) {
+		font-size: 2.5rem;
+	}
+}
+
+.join__text {
+	padding-right: 2rem;
+}
+
+.join__form {
+	grid-area: form;
+	height: 50vh;
+	width: 100%;
+	max-width: 800px;
+	margin: 2em auto;
+	background-color: salmon;
+}
+
+.join-form__wrapper {
+	text-align: center;
+	line-height: 50vh;
+	font-weight: bold;
+}
