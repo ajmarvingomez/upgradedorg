@@ -1,4 +1,4 @@
-<?php get_header() ?>
+<?php get_header(); ?>
 
 <main class="blog-wrapper">
 	<div class="blog-title-wrapper"><h1 class="blog__title"><?php the_title(); ?></h1></div>
@@ -42,4 +42,4 @@
 
 </main> <!-- end main content -->
 
-<?php get_footer() ?>
+<?php get_footer(); ?>

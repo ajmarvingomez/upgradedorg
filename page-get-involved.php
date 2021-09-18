@@ -1,12 +1,12 @@
-<?php get_header() ?>
+<?php get_header(); ?>
 
 <main class="join-wrapper">
 	<div class="join-text-wrapper">
 		<div class="join-title-wrapper">
-			<h1 class="join__title"><?php the_title() ?></h1>
+			<h1 class="join__title"><?php the_title(); ?></h1>
 		</div>
 		<section class="join__text">
-			<?php the_content() ?>
+			<?php the_content(); ?>
 		</section>
 	</div>
 	<!--section class="join__form">
@@ -31,4 +31,4 @@
 	<!--/section-->
 </main>
 
-<?php get_footer() ?>
+<?php get_footer(); ?>

@@ -1,7 +1,7 @@
-<?php get_header() ?>
+<?php get_header(); ?>
 
 <main class="projects-wrapper">
-		<div class="projects-title-wrapper"><h1 class="projects__title"><?php the_title() ?></h1></div>
+		<div class="projects-title-wrapper"><h1 class="projects__title"><?php the_title(); ?></h1></div>
 		
 		<main class="projects__content">
 			<ul class="projects-init__list">
@@ -15,7 +15,7 @@
 							<h2 class="projects-item__title">
 								<a href="<?php echo get_post_permalink(); ?>"><?php the_title(); ?></a></h2>
 							<h3 class="projects-item__subtitle"><?php echo get_secondary_title(); ?></h3>
-							<div class="projects-item__summary"><?php the_excerpt() ?></div>
+							<div class="projects-item__summary"><?php the_excerpt(); ?></div>
 							<h3 class="projects-item__cta"><?php the_shortlink("Learn more"); ?></h3>
 						</li><?php
 					}
@@ -26,4 +26,4 @@
 		</main> <!-- end content -->
 </main>
 
-<?php get_footer() ?>
+<?php get_footer(); ?>
