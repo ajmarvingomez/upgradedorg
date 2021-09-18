@@ -1,10 +1,10 @@
 <?php get_header() ?>
 
 <main class="blog-wrapper">
-	<div class="blog-title-wrapper"><h1 class="blog__title">Blog</h1></div>
+	<div class="blog-title-wrapper"><h1 class="blog__title"><?php the_title() ?></h1></div>
 
 	<section class="blog__text">
-		<p>Here you can find announcements, events, news, and posts.</p>
+		<p><?php echo get_secondary_title() ?></p>
 	</section>
 
 	<main class="blog-list-wrapper">
