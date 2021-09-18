@@ -1281,7 +1281,7 @@ ul.sm__row { position: relative; display: flex; align-items: center; margin: .5r
 
 .resources__text { margin-bottom: 2rem; padding: 0 8.33%; }
 
-.resources__content { padding: 0 8.33%; }
+.resources__content { padding: 0 8.33%; padding-bottom: 3rem;}
 
 .resources__item-list { column-count: auto; column-width: 350px; margin: 0 auto; padding-left: 0; list-style-type: none; }
 
