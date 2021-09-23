@@ -17,7 +17,7 @@
 
 			      	<li class="resources__item">
 			      	  <div class="resources__link--1"><a href="<?php echo get_post_permalink(); ?>"><?php the_title(); ?></a></div>
-			      	  <p><?php the_content(); ?></p>
+			      	  <p><?php the_excerpt(); ?></p>
 			      	  <div class="resources__link--2"><a href="<?php echo get_post_permalink(); ?>">Read <?php the_title() ?></a></div>
 			      	</li><?php
 			    }
