@@ -185,4 +185,5 @@ wp_enqueue_script('main', get_template_directory() . '/assets/js/main.js');
 // Adding excerpt for page
 add_post_type_support( 'page', 'excerpt' );
 add_post_type_support( 'initiatives', 'excerpt' );
+add_post_type_support( 'resources', 'excerpt' );
 add_post_type_support('page', 'custom-fields');
