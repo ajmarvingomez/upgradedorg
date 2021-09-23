@@ -1156,7 +1156,7 @@ ul.sm__row { position: relative; display: flex; align-items: center; margin: .5r
 
 .sm__user a:hover, .sm__user a:focus { color: black; border-bottom: 1px solid black; }
 
-.single-wrapper, .single-resource-wrapper { max-width: 800px; margin: 0 auto; padding: 0 8.33%; padding-top: 72px; }
+.single-wrapper, .single-resource-wrapper { max-width: calc(800px + 16.67vw); margin: 0 auto; padding: 0 8.33%; padding-top: 72px; }
 
 @media screen and (max-width: 600px) { .single-wrapper, .single-resource-wrapper { padding: 0 4.167%; padding-top: 72px; } }
 
