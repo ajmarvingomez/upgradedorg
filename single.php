@@ -1,40 +1,22 @@
-<?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package dsarichmond
- */
+<?php get_header(); ?>
 
-get_header();
-?>
+<main class="single-resource-wrapper">
+	<div class="single-resource__back-button">
+		<a class="single-button__link" href="<?php echo get_site_url() . '/' . $post_type ?>"><< Back to <?php echo ucfirst($post_type); ?> </a>
+	</div>
 
-	<main id="primary" class="site-main">
+	<h1 class="single__title"><?php the_title(); ?></h1>
+	<div class="single__category"><?php the_category(', '); ?></div>
+	<?php
+	$author_id = $post->post_author;
+	$author_name = the_author_meta('display_name', $author_id);
+	?>
+	<div class="single__author"><?php $author_name; ?></div>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+	<article class="single__content">
+		<?php the_content(); ?>
+	</article>
 
-			get_template_part( 'template-parts/content', get_post_type() );
+</main>
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'dsarichmond' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'dsarichmond' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
-
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer(); ?>
