@@ -2,7 +2,7 @@
 
 <main class="single-resource-wrapper">
 	<div class="single-resource__back-button">
-		<a class="single-button__link" href="<?php echo get_site_url() . '/resources' ?>"><< Back to Resources</a>
+		<a class="single-button__link" href="<?php echo get_site_url() . '/resources' ?>"><< Back to <?php echo ucfirst($post_type); ?> </a>
 	</div>
 
 	<h1 class="single__title"><?php the_title(); ?></h1>
