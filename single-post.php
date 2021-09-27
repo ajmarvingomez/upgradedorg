@@ -6,8 +6,6 @@
 	</div>
 
 	<?php if (is_single()) {
-		global $author_name;
-		global $post_date;
 		// author:
 		$post_id = get_queried_object_id();
 		$post_author_id = get_post_field( 'post_author', $post_id );
