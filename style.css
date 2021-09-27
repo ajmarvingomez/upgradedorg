@@ -1166,15 +1166,15 @@ ul.sm__row { position: relative; display: flex; align-items: center; margin: .5r
 
 @media screen and (max-width: 600px) { .single-wrapper, .single-resource-wrapper { padding: 0 4.167%; padding-top: 72px; } }
 
-.single-resource-wrapper { padding-top: 120px; max-width: calc(800px + 16.67vw); }
+.single-resource-wrapper { padding-top: 72px; max-width: calc(800px + 16.67vw); }
 
 .single-resource__back-button { margin: 1.5rem 0; }
 
-.single__back-button { padding-top: 1rem; color: black; }
+.single__back-button { padding-top: 1rem; color: red; }
 
-.single-button__link { text-decoration: none; color: black !important; transition: border-bottom .3s; }
+.single-button__link { text-decoration: none; color: #EC1F27 !important; transition: border-bottom .3s; }
 
-.single-button__link:hover, .single-button__link:focus { border-bottom: 1px solid black; }
+.single-button__link:hover, .single-button__link:focus { border-bottom: 1px solid #EC1F27;; }
 
 .single__title-wrapper { padding-top: 3rem; }
 
@@ -1186,7 +1186,7 @@ ul.sm__row { position: relative; display: flex; align-items: center; margin: .5r
 
 .single__category a { display: inline-block; font-weight: bold; color: white; background-color: #EC1F27; text-transform: uppercase; text-decoration: none; }
 
-.single__title { font-family: "Raleway", sans-serif; font-weight: 900; font-size: 2.75rem; margin: .25em 0; margin-top: .125em; }
+.single__title { border-bottom: 1px solid black; font-family: "Raleway", sans-serif; font-weight: 900; font-size: 2.75rem; margin: .25em 0; margin-top: .125em; }
 
 .single__title a { text-decoration: none; color: black; transition: color .3s, border-bottom .3s; }
 
@@ -1203,7 +1203,7 @@ ul.sm__row { position: relative; display: flex; align-items: center; margin: .5r
 
 @media screen and (max-width: 600px) { .blog-content-wrapper > p:first-of-type::first-letter { font-size: 3rem; line-height: 1; } }
 
-.single__content { position: relative; padding: 2rem 0 3rem 0; }
+.single__content { position: relative; padding: 1rem 0 3rem 0; }
 
 .single__content a { text-decoration: none; color: black; border-bottom: 2px solid #EC1F27; transition: background-color .3s; }
 
