@@ -7,11 +7,6 @@
 
 	<h1 class="single__title"><?php the_title(); ?></h1>
 	<div class="single__category"><?php the_category(', '); ?></div>
-	<?php
-	$author_id = $post->post_author;
-	$author_name = the_author_meta('display_name', $author_id);
-	?>
-	<div class="single__author"><?php $author_name; ?></div>
 
 	<article class="single__content">
 		<?php the_content(); ?>
