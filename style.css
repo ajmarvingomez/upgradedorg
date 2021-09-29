@@ -2092,10 +2092,11 @@ ul.sm__row {
 	position: relative;
 	padding-top: 1rem;
 	padding: 1rem;
-	border-radius: 10px;
-	background-image: url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
+	border-radius: 0px;
+	background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
 	background-size: cover;
 	background-position: bottom left;
+	box-shadow: 4px 4px 0 black; /* 2px 2px 4px rgb(0,0,0,.7); */
 }
 
 .join__form div[role="form"] p {
@@ -2124,7 +2125,7 @@ textarea[name="your-message"] {
 
 .join__form p input[type="submit"] {
 	font-weight: 700;
-	background-color: #EC1F27;
+	background-color: black; /* #EC1F27; */
 	color: white;
 	border: 0px solid black !important;
 	cursor: pointer;
@@ -2132,7 +2133,7 @@ textarea[name="your-message"] {
 }
 
 p input[type="submit"]:hover, p input[type="submit"]:focus {
-	background-color:  black;	
+	background-color: #EC1F27;	
 }
 
 
