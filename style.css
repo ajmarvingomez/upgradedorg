@@ -2085,7 +2085,7 @@ ul.sm__row {
 	grid-area: form;
 	width: 100%;
 	max-width: 800px;
-	margin: 2em auto;
+	margin: 2em auto;;
 }
 
 .join__form div[role="form"] {
@@ -2103,17 +2103,14 @@ ul.sm__row {
 	border: 2px solid #EC1F27;
 	line-height: 3;
 	border-radius: 10px;
-}
-
-.join__form div[role="form"] p span input textarea {
-	border: 2px solid #EC1F27;
-
+	outline-width: 0px;
 }
 
 textarea[name="your-message"] {
 	line-height: 1.5;
 	border: 2px solid #EC1F27;
 	border-radius: 10px;
+	outline-width: 0px;
 /*	box-shadow: 2px 2px 4px rgb(0,0,0,.7); */
 }
 
@@ -2479,6 +2476,7 @@ p input[type="submit"]:hover, p input[type="submit"]:focus {
 	border: 2px solid #EC1F27;
 	line-height: 3;
 	border-radius: 10px;
+	outline-width: 0px;
 }
 
 .contact-content__form p input[type="submit"] {
