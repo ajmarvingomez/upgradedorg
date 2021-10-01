@@ -1,4 +1,4 @@
-/*!
+/*
 Theme Name: dsarichmond
 Theme URI: http://underscores.me/
 Author: Underscores.me
@@ -2091,12 +2091,7 @@ ul.sm__row {
 .join__form div[role="form"] {
 	position: relative;
 	padding-top: 1rem;
-	padding: 1rem;
-	border-radius: 0px;
-	background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
-	background-size: cover;
-	background-position: bottom left;
-	box-shadow: 4px 4px 0 black; /* 2px 2px 4px rgb(0,0,0,.7); */
+/*	padding: 1rem; */
 }
 
 .join__form div[role="form"] p {
@@ -2108,7 +2103,7 @@ ul.sm__row {
 	border: 2px solid #EC1F27;
 	line-height: 3;
 	border-radius: 10px;
-	box-shadow: 2px 2px 4px rgb(0,0,0,.7);
+/*	box-shadow: 2px 2px 4px rgb(0,0,0,.7); */
 }
 
 .join__form div[role="form"] p label span input textarea {
@@ -2120,20 +2115,21 @@ textarea[name="your-message"] {
 	line-height: 1.5;
 	border: 2px solid #EC1F27;
 	border-radius: 10px;
-	box-shadow: 2px 2px 4px rgb(0,0,0,.7);
+/*	box-shadow: 2px 2px 4px rgb(0,0,0,.7); */
 }
 
 .join__form p input[type="submit"] {
 	font-weight: 700;
-	background-color: black; /* #EC1F27; */
+	background-color: #EC1F27;
 	color: white;
 	border: 0px solid black !important;
 	cursor: pointer;
-	transition: background-color .3s;
+	transition: background-color .3s, border .3s;
 }
 
 p input[type="submit"]:hover, p input[type="submit"]:focus {
-	background-color: #EC1F27;	
+	border: 2px solid black !important;	
+	box-shadow: 2px 2px 4px rgb(0,0,0,.7);
 }
 
 
@@ -2414,6 +2410,8 @@ p input[type="submit"]:hover, p input[type="submit"]:focus {
 	padding: .5rem;
 	color: white;
 }
+
+/* Contact Page: */
 
 .contact-wrapper {
 	padding: 0 8.33%;
