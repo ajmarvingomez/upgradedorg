@@ -1580,7 +1580,7 @@ ul.sm__row {
 }
 
 .sm__type {
-	width: 6rem;
+	width: 7rem;
 	padding-right: 1rem;
 	font-weight: bold;
 }
@@ -2103,10 +2103,9 @@ ul.sm__row {
 	border: 2px solid #EC1F27;
 	line-height: 3;
 	border-radius: 10px;
-/*	box-shadow: 2px 2px 4px rgb(0,0,0,.7); */
 }
 
-.join__form div[role="form"] p label span input textarea {
+.join__form div[role="form"] p span input textarea {
 	border: 2px solid #EC1F27;
 
 }
@@ -2455,7 +2454,7 @@ p input[type="submit"]:hover, p input[type="submit"]:focus {
 .contact__content {
 	position: relative;
 	display: grid;
-	grid-template-columns: 2fr 3fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-areas: 'text form''sm sm';
 }
 
@@ -2475,78 +2474,40 @@ p input[type="submit"]:hover, p input[type="submit"]:focus {
 	padding-left: 2rem;
 }
 
+.contact-content__form p input {
+	width: 100%;
+	border: 2px solid #EC1F27;
+	line-height: 3;
+	border-radius: 10px;
+}
+
+.contact-content__form p input[type="submit"] {
+	box-sizing: border-box;
+	font-weight: 700;
+	background-color: #EC1F27;
+	color: white;
+	border: 0px solid black !important;
+	cursor: pointer;
+	transition: background-color .3s, border .3s;
+}
+
+.contact-content__form p input[type="submit"]:hover, .contact-content__form p input[type="submit"]:focus {
+	border: 2px solid black !important;	
+	box-shadow: 2px 2px 4px rgb(0,0,0,.7);
+}
+
+.contact-content__form div[role="form"] p {
+	margin: .625rem 0;
+}
+
+
 @media screen and (max-width: 768px) {
 	.contact-content__form {
 		padding-left: 0;
 	}
 }
 
-.contact-content__sm {
-	grid-area: sm;
-}
-
-.contact-sm__title {
-	position: relative;
-	margin: 0;
-	margin-bottom: .75em;
-	padding: .25em 0;
-	font-family: "Raleway", sans-serif;
-	font-size: 2.5rem;
-}
-
-.contact-sm__title::before {
-	content: '';
-	position: absolute;
-	top: calc(100% - 8px);
-	left: 0;
-	display: block;
-	height: 6px;
-	width: 100%;
-	background-color: #EC1F27;
-	background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("../img/red-splatter.jpg");
-	background-size: cover;
-	background-position: bottom left;
-}
-
-.contact-sm__content {
-	margin-bottom: 3rem;
-}
-
-ul.contact-sm__row {
-	position: relative;
-	display: flex;
-	align-items: center;
-	margin: .5rem 0;
-	padding-left: 0;
-	list-style-type: none;
-}
-
-.contact-sm__svg {
-	padding-right: 1rem;
-}
-
-.contact-sm__svg img {
-	height: 32px;
-}
-
-.contact-sm__type {
-	width: 6rem;
-	padding-right: 1rem;
-	font-weight: bold;
-}
-
-.contact-sm__user a {
-	text-decoration: none;
-	color: #EC1F27;
-	border-bottom: 1px solid #EC1F27;
-	transition: color .3s, border-bottom .3s;
-}
-
-.contact-sm__user a:hover,
-.contact-sm__user a:focus {
-	color: black;
-	border-bottom: 1px solid black;
-}
+/* Projects & Initiatives: */
 
 .projects-title-wrapper {
 	position: relative;
