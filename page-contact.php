@@ -9,7 +9,7 @@
 			</section>
 
 			<section class="contact-content__form">
-				<?php echo [contact-form-7 id="527" title="Contact Form"] ?>
+				<?php echo do_shortcode('[contact-form-7 id="527" title="Contact Form"]'); ?>
 			</section>
 
 			<?php get_template_part('template-parts/social-media'); ?>
