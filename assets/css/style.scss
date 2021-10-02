@@ -1,5 +1,3 @@
----
----
 // Main style file
 
 body {
@@ -20,6 +18,9 @@ body {
 // nav
 @import '_includes/menu';
 @import '_includes/footer';
+
+// layouts
+@import '_layouts/single';
 
 // homepage
 @import '_homepage/landing-page';
