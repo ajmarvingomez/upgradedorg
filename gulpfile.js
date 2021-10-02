@@ -9,7 +9,7 @@ var css_compile = (done) => {
 		.pipe(sass({
 			outputStyle: 'compressed'
 		}).on('error', sass.logError))
-		.pipe(gulp.dest('assets/css'));
+		.pipe(gulp.dest('.'));
 	done();
 };
 
