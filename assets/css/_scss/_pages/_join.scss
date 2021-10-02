@@ -1,19 +1,13 @@
-/* Join CSS */
+/* Get Involved CSS: */
 
 .join-wrapper {
 	position: relative;
 	display: grid;
 	grid-template-columns: 3fr 2fr;
-	grid-template-areas:'text form' 
-						'text form';
+	grid-template-areas: 'text form';
 	margin: 0 8.33%;
 	padding-top: 72px;
-	@media screen and (max-width: 1000px) {
-		grid-template-columns: 1fr;
-		grid-template-areas: 'title'
-							 'text'
-							 'form';
-	}
+	padding-bottom: 3rem;
 }
 
 .join-text-wrapper {
@@ -26,10 +20,6 @@
 
 .join__title {
 	position: relative;
-//	max-width: 800px;
-//	margin: 0 auto;
-	//margin-right:
-//	padding: 0 8.33%;
 	margin-right: 8.33%;
 	margin-bottom: .75em;
 	padding: .25em 0;
@@ -44,12 +34,9 @@
 		height: 6px;
 		width: 100%;
 		background-color: $dsared;
-		background-image: linear-gradient(to bottom right, rgba(255,0,0,.1), rgba(255,0,0,.3)), url('../img/red-splatter.jpg');
+		background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("../img/red-splatter.jpg");
 		background-size: cover;
 		background-position: bottom left;
-	}
-	@media screen and (max-width: 800px) {
-		font-size: 2.5rem;
 	}
 }
 
@@ -59,15 +46,60 @@
 
 .join__form {
 	grid-area: form;
-	height: 50vh;
 	width: 100%;
 	max-width: 800px;
 	margin: 2em auto;
-	background-color: salmon;
+	div[role="form"] {
+		position: relative;
+		padding-top: 1rem;
+		p {
+			margin: .75rem;
+			input {
+				width: 100%;
+				border: 2px solid $dsared;
+				line-height: 3;
+				border-radius: 10px;
+				outline-width: 0px;
+			}
+		}
+	}
+	p {
+		input[type="submit"] {
+			font-weight: 700;
+			background-color: $dsared;
+			color: white;
+			border: 0px solid black !important;
+			cursor: pointer;
+			transition: background-color .3s, border .3s;
+		}
+	}
 }
 
-.join-form__wrapper {
-	text-align: center;
-	line-height: 50vh;
-	font-weight: bold;
+textarea[name="your-message"] {
+	line-height: 1.5;
+	border: 2px solid $dsared;
+	border-radius: 10px;
+	outline-width: 0px;
+}
+
+p {
+	input[type="submit"] {
+		&:hover, &:focus {
+			border: 2px solid black !important;
+			box-shadow: 2px 2px 4px rgb(0,0,0,.7);
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.join-wrapper {
+		grid-template-columns: 1fr;
+		grid-template-areas: 'text''form';
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.join__title {
+		font-size: 2.5rem;
+	}
 }
