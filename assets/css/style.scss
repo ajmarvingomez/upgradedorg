@@ -14,7 +14,8 @@ body {
 @import 'colors';
 
 // external
-@import '_ext/underscore-css'
+@import '_ext/header';
+@import '_ext/underscore';
 
 // nav
 @import '_includes/menu';
