@@ -22,13 +22,13 @@ body {
 // layouts
 @import '_layouts/single';
 
+// includes
+@import '_includes/social-media';
+
 // homepage
 @import '_homepage/landing-page';
 @import '_homepage/about-section';
 @import '_homepage/resources-section';
-
-// includes
-@import '_includes/social-media';
 
 // pages
 @import '_pages/about-page';
