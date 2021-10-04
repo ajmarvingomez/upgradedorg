@@ -1804,7 +1804,7 @@ ul.sm__row {
 }
 
 .about__text {
-  max-width: 800px;
+  max-width: calc(800px + 16.67vw);
   margin: 0 auto;
   margin-bottom: 3rem;
   padding: 0 8.33%;
@@ -1970,6 +1970,7 @@ ul.sm__row {
 }
 .join__form div[role=form] p input {
   width: 100%;
+  padding-left: 8px;
   border: 2px solid #EC1F27;
   line-height: 3;
   border-radius: 10px;
@@ -1985,6 +1986,7 @@ ul.sm__row {
 }
 
 textarea[name=your-message] {
+  padding-left: 8px;
   line-height: 1.5;
   border: 2px solid #EC1F27;
   border-radius: 10px;
@@ -2317,6 +2319,7 @@ p input[type=submit]:hover, p input[type=submit]:focus {
 }
 .contact-content__form p input {
   width: 100%;
+  padding-left: 8px;
   border: 2px solid #EC1F27;
   line-height: 3;
   border-radius: 10px;

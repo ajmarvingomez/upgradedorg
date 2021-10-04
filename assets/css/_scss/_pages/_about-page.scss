@@ -40,7 +40,7 @@
 }
 
 .about__text {
-	max-width: 800px;
+	max-width: calc(800px + 16.67vw);
 	margin: 0 auto;
 	margin-bottom: 3rem;
 	padding: 0 8.33%;
