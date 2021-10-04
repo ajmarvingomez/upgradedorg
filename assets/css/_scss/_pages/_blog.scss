@@ -1,5 +1,5 @@
 .blog-wrapper {
-	max-width: 900px;
+	max-width: calc(900px + 16.67vw);
 	margin: 0 auto;
 	padding: 0 8.33%;
 	@media screen and (max-width: 600px) {
@@ -61,6 +61,27 @@
 	background-color: $dsared;
 	border: 1px solid red;
 	text-transform: uppercase;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		li {
+			display: inline-block;
+			font-weight: bold;
+			color: white;
+			background-color: $dsared;
+			border: 1px solid red;
+			text-transform: uppercase;
+			a {
+				display: inline-block;
+				font-weight: bold;
+				color: white;
+				background-color: $dsared;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 .blog-entry__title {
