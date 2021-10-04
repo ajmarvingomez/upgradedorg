@@ -1,5 +1,8 @@
+/* Contact Page: */
+
 .contact-wrapper {
 	padding: 0 8.33%;
+	padding-bottom: 3rem;
 }
 
 .contact-title-wrapper {
@@ -8,7 +11,6 @@
 
 .contact__title {
 	position: relative;
-//	max-width: 800px;
 	margin: 0 auto;
 	padding: 0 8.33%;
 	margin-bottom: .75em;
@@ -24,7 +26,7 @@
 		height: 6px;
 		width: 100%;
 		background-color: $dsared;
-		background-image: linear-gradient(to bottom right, rgba(255,0,0,.1), rgba(255,0,0,.3)), url('../img/red-splatter.jpg');
+		background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("../img/red-splatter.jpg");
 		background-size: cover;
 		background-position: bottom left;
 	}
@@ -36,14 +38,11 @@
 .contact__content {
 	position: relative;
 	display: grid;
-	grid-template-columns: 2fr 3fr;
-	grid-template-areas: 'text form'
-						 'sm sm';
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 'text form''sm sm';
 	@media screen and (max-width: 768px) {
-		grid-template-columns: 1fr;
-		grid-template-areas: 'text'
-							 'form'
-							 'sm';
+			grid-template-columns: 1fr;
+			grid-template-areas: 'text''form''sm';
 	}
 }
 
@@ -54,80 +53,38 @@
 .contact-content__form {
 	grid-area: form;
 	padding-left: 2rem;
+	p {
+		input {
+			width: 100%;
+			border: 2px solid $dsared;
+			line-height: 3;
+			border-radius: 10px;
+			outline-width: 0px;
+		}
+		input[type="submit"] {
+			box-sizing: border-box;
+			font-weight: 700;
+			background-color: $dsared;
+			color: white;
+			border: 0px solid black !important;
+			cursor: pointer;
+			transition: background-color .3s, border .3s;
+			&:hover {
+				border: 2px solid black !important;
+				box-shadow: 2px 2px 4px rgb(0,0,0,.7);
+			}
+			&:focus {
+				border: 2px solid black !important;
+				box-shadow: 2px 2px 4px rgb(0,0,0,.7);
+			}
+		}
+	}
+	div[role="form"] {
+		p {
+			margin: .625rem 0;
+		}
+	}
 	@media screen and (max-width: 768px) {
 		padding-left: 0;
-	}
-}
-
-.contact-form__form {
-
-}
-
-.contact-content__sm {
-	grid-area: sm;
-}
-
-.contact-sm__title {
-	position: relative;
-	margin: 0;
-	margin-bottom: .75em;
-	padding: .25em 0;
-	font-family: "Raleway", sans-serif;
-	font-size: 2.5rem;
-	&::before {
-		content: '';
-		position: absolute;
-		top: calc(100% - 8px);
-		left: 0;
-		display: block;
-		height: 6px;
-		width: 100%;
-		background-color: $dsared;
-		background-image: linear-gradient(to bottom right, rgba(255,0,0,.1), rgba(255,0,0,.3)), url('../img/red-splatter.jpg');
-		background-size: cover;
-		background-position: bottom left;
-	}
-}
-
-.contact-sm__content {
-	margin-bottom: 3rem;
-}
-
-.contact-sm__flex-wrapper {
-
-}
-
-ul.contact-sm__row {
-	position: relative;
-	display: flex;
-	align-items: center;
-	margin: .5rem 0;
-	padding-left: 0;
-	list-style-type: none;
-}
-
-.contact-sm__svg {
-	padding-right: 1rem;
-	img {
-		height: 32px;
-	}
-}
-
-.contact-sm__type {
-	width: 6rem;
-	padding-right: 1rem;
-	font-weight: bold;
-}
-
-.contact-sm__user {
-	a {
-		text-decoration: none;
-		color: $dsared;
-		border-bottom: 1px solid $dsared;
-		transition: color .3s, border-bottom .3s;
-		&:hover, &:focus {
-			color: black;
-			border-bottom: 1px solid black;
-		}
 	}
 }
