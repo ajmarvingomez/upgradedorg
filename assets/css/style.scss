@@ -1,4 +1,9 @@
-// Main style file
+// external
+@import '_scss/_ext/header';
+@import '_scss/_ext/underscore';
+
+
+/* ************************** KATHERINE'S STYLES BELOW *************************/
 
 body {
 	margin: 0;
@@ -9,31 +14,27 @@ body {
 }
 
 // vars
-@import 'colors';
-
-// external
-@import '_ext/header';
-@import '_ext/underscore';
+@import '_scss/_includes/colors';
 
 // nav
-@import '_includes/menu';
-@import '_includes/footer';
+@import '_scss/_includes/menu';
+@import '_scss/_includes/footer';
 
 // layouts
-@import '_layouts/single';
+@import '_scss/_layouts/single';
 
 // includes
-@import '_includes/social-media';
+@import '_scss/_includes/social-media';
 
 // homepage
-@import '_homepage/landing-page';
-@import '_homepage/about-section';
-@import '_homepage/resources-section';
+@import '_scss/_homepage/landing-page';
+@import '_scss/_homepage/about-section';
+@import '_scss/_homepage/resources-section';
 
 // pages
-@import '_pages/about-page';
-@import '_pages/join';
-@import '_pages/blog';
-@import '_pages/resources-page';
-@import '_pages/contact';
-@import '_pages/projects';
+@import '_scss/_pages/about-page';
+@import '_scss/_pages/join';
+@import '_scss/_pages/blog';
+@import '_scss/_pages/resources-page';
+@import '_scss/_pages/contact';
+@import '_scss/_pages/projects';
