@@ -1,7 +1,7 @@
 /* Single Page CSS: */
 
-.single-wrapper,
-.single-resource-wrapper {
+.single-wrapper {
+	max-width: calc(800px + 16.67vw);
 	margin: 0 auto;
 	padding: 0 8.33%;
 	padding-top: 72px;
@@ -11,18 +11,11 @@
 	}
 }
 
-.single-resource-wrapper {
-	max-width: calc(800px + 16.67vw);
-//	padding-top: 120px;
-}
-
-.single-resource__back-button {
-	margin: 1.5rem 0;
-}
-
 .single__back-button {
-	padding-top: 1rem;
-	color: $dsared;
+	margin: 1rem 0;
+	a {
+		color: $dsared;
+	}
 }
 
 .single-button__link {
