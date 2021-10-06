@@ -54,51 +54,26 @@ get_header();
 
 	  <section class="homepage__resources">
 	    <h2 class="homepage-resources__title">Resources</h2>
-	    <ul class="homepage-resources__item-list">
 
-	      <li class="homepage-resources__item">
-	        <div class="homepage-resources__link--1"><a href="#">DSA Richmond Bylaws</a></div>
-	        <p>The bylaws of the chapter are the basic governing rules of our organization. Our bylaws establish the rights of the membership, the rules of our chapter meetings, the duties of the officers and the Steering Committee, and other rules. The bylaws can be amended by two-thirds of any meeting of the membership.</p>
-	        <div class="homepage-resources__link--2"><a href="#">Read bylaws</a></div>
-	      </li>
-	      <li class="homepage-resources__item">
-	        <div class="homepage-resources__link--1"><a href="#">Minutes and Agendas</a></div>
-	        <p>View the minutes and agendas of the General and Steering Committee</p>
-	        <div class="homepage-resources__link--2"><a href="#">View records</a></div>
-	      </li>
-	      <li class="homepage-resources__item">
-	        <div class="homepage-resources__link--1"><a href="#">Code of Conduct</a></div>
-	        <p>Our Code of Conduct defines behaviors that constitute harassment, abuse, and bullying, and that may be subject to filing a grievance. Grievances are referred to our Harassment and Grievance Officers. If they are unable to mediate conflict or resolve prohibited behaviors, the Steering Committee may issue penalties against the misbehavior.</p>
-	        <div class="homepage-resources__link--2"><a href="#">View Code of Conduct</a></div>
-	      </li>
-	      <li class="homepage-resources__item">
-	        <div class="homepage-resources__link--1"><a href="#">Resources on Meetings</a></div>
-	        <p>View resources related to rules of order, debate, decorum, and procedure used in the business of the Chapter as well as templates for recording meeting minutes and drafting agendas.</p>
-	        <div class="homepage-resources__link--2"><a href="#">View resources on meetings</a></div>
-	      </li>
-	      <li class="homepage-resources__item">
-	        <div class="homepage-resources__link--1"><a href="#">Submit an Item of Business</a></div>
-	        <p>Please use the following form to submit an item of business to be taken up by the Richmond Chapter Steering Committee at a future meeting. Items will be reviewed and approved by the Steering Committee when voting to approve the meeting agenda.</p>
-	        <div class="homepage-resources__link--2"><a href="#">Request for agenda item</a></div>
-	      </li>
-	      <li class="homepage-resources__item">
-	        <div class="homepage-resources__link--1"><a href="#">Submit a Motion</a></div>
-	        <p>If you would like the general membership to consider a motion, fill out this form. Your motion must have one additional supporter. You will receive a formatted version in your email for you to approve. If your motion has been submitted one week before the next General Meeting, the motion will appear on the agenda for the General Meeting. You or another sponsor may move its adoption during the General Meeting.</p>
-	        <div class="homepage-resources__link--2"><a href="#">Submit A Motion</a></div>
-	      </li>
-	      <li class="homepage-resources__item">
-	        <div class="homepage-resources__link--1"><a href="#">Submit a Grievance</a></div>
-	        <p>If you are having a conflict with another member of Richmond DSA which you feel would benefit from mediation, please fill this form out. Once a grievance has been submitted, our harrassment/grievance officers (HGOs) will be in contact with you with you through the process of mediation. Please note that this is a confidential process handled by our elected HGOs.</p>
-	        <div class="homepage-resources__link--2"><a href="#">Submit A Grievance</a></div>
-	      </li>
-	      <li class="homepage-resources__item">
-	        <div class="homepage-resources__link--1"><a href="#">DSA Richmond Branding</a></div>
-	        <p>The DSA Richmond branding (logos in multiple layouts) in vector (AI, EPS) and raster (PNG) formats. Included are the main vertical logo (full color), single-color main vertical logo (black & white), horizontal logo, logo without text for use in circular avatars, and square logo without text.</p>
-	        <div class="homepage-resources__link--2"><a href="#">Download Now</a></div>
-	      </li>
-	    </ul>
-	  </section>
-	</main>
+		<ul class="resources__item-list">
+		<?php
+		  $p = new WP_Query(array('post_type' => 'resources'));
+		  if ($p->have_posts()) {
+		    while ($p->have_posts()) {
+		      $p->the_post(); ?>
+
+		      	<li class="resources__item">
+		      	  <div class="resources__link--1"><a href="<?php echo get_post_permalink(); ?>"><?php the_title(); ?></a></div>
+		      	  <p><?php the_excerpt(); ?></p>
+		      	  <div class="resources__link--2"><a href="<?php echo get_post_permalink(); ?>">Read <?php the_title() ?></a></div>
+		      	</li><?php
+		    }
+		  }	
+		?>
+		</ul>
+		  
+	</section>
+</main>
 
 <?php
 get_footer();
