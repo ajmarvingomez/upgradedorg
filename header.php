@@ -39,7 +39,7 @@
 	    <div class="nav-close-icon nav-content--hide"><img src="<?php echo get_site_url() . '/wp-content/uploads/2021/09/x.svg' ?>" alt="hamburger icon"></div>
 	    <ul class="nav-content__link-list">
 	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/about' ?>">About</a></li>
-	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/initiatives' ?>">Campaigns</a></li>
+	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/initiatives' ?>">Initiatives</a></li>
 	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/blog' ?>">Blog</a></li>
 	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/resources' ?>">Resources</a></li>
 	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/contact' ?>">Contact</a></li>
