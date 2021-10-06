@@ -19,7 +19,7 @@
 
 			<ul class="footer__link-list">
 			  <li class="footer-list__link"><a href="<?php echo get_site_url() . '/about' ?>">About</a></li>
-			  <li class="footer-list__link"><a href="<?php echo get_site_url() . '/initiatives' ?>">Campaigns</a></li>
+			  <li class="footer-list__link"><a href="<?php echo get_site_url() . '/initiatives' ?>">Initiatives</a></li>
 			  <li class="footer-list__link"><a href="<?php echo get_site_url() . '/blog' ?>">Blog</a></li>
 			  <li class="footer-list__link"><a href="<?php echo get_site_url() . '/resource-page' ?>">Resources</a></li>
 			  <li class="footer-list__link"><a href="<?php echo get_site_url() . '/contact' ?>">Contact</a></li>
