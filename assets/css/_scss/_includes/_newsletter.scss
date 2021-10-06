@@ -1,13 +1,15 @@
 /* Newsletter: */
 
 .newsletter-wrapper {
-	background-color: $dsared;
-	border-top: 2px solid black;
-	color: white;
+//	background-color: $dsared;
+	color: $dsared;
 }
 
 .newsletter-content {
-	padding: 1rem 8.33%;
+	margin: 2rem 3rem 1rem 3rem;
+	padding: 1rem calc(8.33% - 3rem);
+	border-top: 8px solid $dsared;
+//	border-right: 4px solid red;
 	@media screen and (max-width: 600px) {
 		padding: 1rem 4.167%;
 	}
@@ -15,15 +17,16 @@
 
 .newsletter__title {
 	font-family: "Raleway", sans-serif;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid $dsared;
+	color: black;
 }
 
 .newsletter__text {
-
+	color: gray;
 }
 
 .newsletter__form {
-	color: white;
+	color: $dsared; // black;
 
 }
 
@@ -49,7 +52,7 @@
 				input {
 					line-height: 2;
 					background-color: white; // salmon;
-					border-width: 0px !important;
+					border: 2px solid black; //-width: 0px !important;
 					box-shadow: 4px 4px 0 black;
 				}
 			}
@@ -60,9 +63,10 @@
 					height: 52px;
 					padding: 0 3rem;
 					font-weight: 700;
-					background-color: white;
-					color: $dsared;
 					line-height: 2;
+					background-color: $dsared;
+					color: white; //$dsared;
+					border: 2px solid $dsared;
 					transition: box-shadow .3s;
 					&:hover, &:focus {
 						box-shadow: 4px 4px 0 black;
@@ -90,5 +94,5 @@
 }
 
 span.asterisk {
-	color: black !important;
+	color: $dsared !important;
 }

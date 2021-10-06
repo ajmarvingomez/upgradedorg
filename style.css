@@ -1451,13 +1451,13 @@ ul.sm__row {
 
 /* Newsletter: */
 .newsletter-wrapper {
-  background-color: #EC1F27;
-  border-top: 2px solid black;
-  color: white;
+  color: #EC1F27;
 }
 
 .newsletter-content {
-  padding: 1rem 8.33%;
+  margin: 2rem 3rem 1rem 3rem;
+  padding: 1rem calc(8.33% - 3rem);
+  border-top: 8px solid #EC1F27;
 }
 @media screen and (max-width: 600px) {
   .newsletter-content {
@@ -1467,11 +1467,16 @@ ul.sm__row {
 
 .newsletter__title {
   font-family: "Raleway", sans-serif;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #EC1F27;
+  color: black;
+}
+
+.newsletter__text {
+  color: gray;
 }
 
 .newsletter__form {
-  color: white;
+  color: #EC1F27;
 }
 
 #mc_embed_signup {
@@ -1497,7 +1502,7 @@ ul.sm__row {
 #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group input {
   line-height: 2;
   background-color: white;
-  border-width: 0px !important;
+  border: 2px solid black;
   box-shadow: 4px 4px 0 black;
 }
 #mc_embed_signup form #mc_embed_signup_scroll .clear {
@@ -1508,9 +1513,10 @@ ul.sm__row {
   height: 52px;
   padding: 0 3rem;
   font-weight: 700;
-  background-color: white;
-  color: #EC1F27;
   line-height: 2;
+  background-color: #EC1F27;
+  color: white;
+  border: 2px solid #EC1F27;
   transition: box-shadow 0.3s;
 }
 #mc_embed_signup form #mc_embed_signup_scroll .clear input:hover, #mc_embed_signup form #mc_embed_signup_scroll .clear input:focus {
@@ -1536,7 +1542,7 @@ ul.sm__row {
 }
 
 span.asterisk {
-  color: black !important;
+  color: #EC1F27 !important;
 }
 
 /* Homepage CSS: */
