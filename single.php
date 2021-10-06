@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<main class="single-resource-wrapper">
-	<div class="single-resource__back-button">
+<main class="single-wrapper">
+	<div class="single__back-button">
 		<a class="single-button__link" href="<?php echo get_site_url() . '/' . $post_type ?>"><< Back to <?php echo ucfirst($post_type); ?> </a>
 	</div>
 
