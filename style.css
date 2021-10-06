@@ -1793,7 +1793,7 @@ ul.sm__row {
   height: 6px;
   width: 100%;
   background-color: #EC1F27;
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("../img/red-splatter.jpg");
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
   background-size: cover;
   background-position: bottom left;
 }
@@ -1810,106 +1810,6 @@ ul.sm__row {
   padding: 0 8.33%;
 }
 
-.about__initiatives-wrapper {
-  padding-top: 3rem;
-  font-family: "Montserrat", sans-serif;
-  background-color: #d9d9d9;
-}
-
-.about-init__title {
-  position: relative;
-  margin: 0;
-  margin-bottom: 0.75em;
-  margin: 0 8.33%;
-  padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 3rem;
-}
-.about-init__title::before {
-  content: "";
-  position: absolute;
-  top: calc(100% - 8px);
-  left: 0;
-  display: block;
-  height: 6px;
-  width: 100%;
-  background-color: #EC1F27;
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("../img/red-splatter.jpg");
-  background-size: cover;
-  background-position: bottom left;
-}
-@media screen and (max-width: 800px) {
-  .about-init__title {
-    font-size: 2.5rem;
-  }
-}
-
-.about-init__list {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  max-width: 1200px;
-  margin: 1rem auto;
-  margin-bottom: 0;
-  padding-left: 0;
-  padding-bottom: 3rem;
-}
-
-.about-init__list-item {
-  width: 300px;
-  margin: 1rem;
-  padding: 1rem;
-  background-color: white;
-  border: 2px solid black;
-  list-style-type: none;
-  box-shadow: 4px 4px 0 black;
-}
-@media screen and (max-width: 850px) {
-  .about-init__list-item {
-    width: 100%;
-    margin: 1rem 8.33%;
-  }
-}
-
-.about-item__title {
-  padding-bottom: 0.25em;
-  font-family: "Raleway", sans-serif;
-  border-bottom: 1px solid black;
-}
-.about-item__title a {
-  color: #EC1F27;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-.about-item__title a:hover, .about-item__title a:focus {
-  color: black;
-}
-
-.about-item__subtitle {
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  color: gray;
-}
-
-.about-item__cta {
-  display: inline-block;
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  background-color: #EC1F27;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-.about-item__cta:hover, .about-item__cta:focus {
-  background-color: black;
-}
-.about-item__cta a {
-  display: inline-block;
-  padding: 0.5rem;
-  color: white;
-  text-decoration: none;
-}
 /* Get Involved CSS: */
 .join-wrapper {
   position: relative;

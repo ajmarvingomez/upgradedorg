@@ -30,7 +30,7 @@
 		height: 6px;
 		width: 100%;
 		background-color: $dsared;
-		background-image: linear-gradient(to bottom right, rgba(255,0,0,.1), rgba(255,0,0,.3)), url('../img/red-splatter.jpg');
+		background-image: linear-gradient(to bottom right, rgba(255,0,0,.1), rgba(255,0,0,.3)), url('http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg');
 		background-size: cover;
 		background-position: bottom left;
 	}
@@ -44,110 +44,4 @@
 	margin: 0 auto;
 	margin-bottom: 3rem;
 	padding: 0 8.33%;
-}
-
-.about__initiatives-wrapper {
-	padding-top: 3rem;
-	font-family: "Montserrat", sans-serif;	
-	background-color: hsl(0, 0%, 85%);
-}
-
-.about-init__title {
-	position: relative;
-	margin: 0;
-	margin-bottom: .75em;
-	margin: 0 8.33%;
-	padding: .25em 0;
-	font-family: "Raleway", sans-serif;
-	font-size: 3rem;
-	&::before {
-		content: '';
-		position: absolute;
-		top: calc(100% - 8px);
-		left: 0;
-		display: block;
-		height: 6px;
-		width: 100%;
-		background-color: $dsared;
-		background-image: linear-gradient(to bottom right, rgba(255,0,0,.1), rgba(255,0,0,.3)), url('../img/red-splatter.jpg');
-		background-size: cover;
-		background-position: bottom left;
-	}
-	@media screen and (max-width: 800px) {
-		font-size: 2.5rem;
-	}	
-}
-
-.about-init__list {
-	position: relative;
-	display: flex;
-	justify-content: center;
-//	align-items: flex-start;
-	flex-flow: row wrap;
-	max-width: 1200px;
-	margin: 1rem auto;
-	margin-bottom: 0;
-	padding-left: 0;
-	padding-bottom: 3rem;
-}
-
-.about-init__list-item {
-	width: 300px;
-	margin: 1rem;
-	padding: 1rem;
-	background-color: white;
-	border: 2px solid black;
-	list-style-type: none;
-	box-shadow: 4px 4px 0 black;
-	@media screen and (max-width: 850px) {
-		width: 100%;
-		margin: 1rem 8.33%;
-	}
-}
-
-.about-item__title {
-	padding-bottom: .25em;
-	font-family: "Raleway", sans-serif;
-	border-bottom: 1px solid black;
-	a {
-		color: $dsared;
-		text-decoration: none;
-		transition: color .3s;
-		&:hover, &:focus {
-			color: black;
-		//	border-bottom: 4px solid $dsared;
-		}
-	}
-}
-
-.about-item__subtitle {
-	font-family: "Raleway", sans-serif;
-	font-weight: 300;
-	font-style: italic;
-	color: hsl(0, 0%, 50%);
-}
-
-.about-item__summary {
-
-}
-
-.about-item__cta {
-	display: inline-block;
-	font-size: 1rem;
-	font-family: "Montserrat", sans-serif;
-	background-color: $dsared;
-	border-radius: 5px;
-	transition: background-color .3s;
-	&:hover, &:focus {
-		background-color: black;
-	}
-	a {
-		display: inline-block;
-		padding: .5rem;
-		color: white;
-		text-decoration: none;
-	}
-	a {
-		
-	}
 }
