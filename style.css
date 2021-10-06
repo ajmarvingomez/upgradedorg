@@ -1449,6 +1449,96 @@ ul.sm__row {
   border-bottom: 1px solid black;
 }
 
+/* Newsletter: */
+.newsletter-wrapper {
+  background-color: #EC1F27;
+  border-top: 2px solid black;
+  color: white;
+}
+
+.newsletter-content {
+  padding: 1rem 8.33%;
+}
+@media screen and (max-width: 600px) {
+  .newsletter-content {
+    padding: 1rem 4.167%;
+  }
+}
+
+.newsletter__title {
+  font-family: "Raleway", sans-serif;
+  border-bottom: 1px solid white;
+}
+
+.newsletter__form {
+  color: white;
+}
+
+#mc_embed_signup {
+  position: relative;
+}
+#mc_embed_signup form {
+  position: relative;
+  padding: 0 !important;
+}
+#mc_embed_signup form #mc_embed_signup_scroll {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+#mc_embed_signup form #mc_embed_signup_scroll .mc-field-group {
+  margin: 0 1rem;
+}
+#mc_embed_signup form #mc_embed_signup_scroll .mc-field-group label {
+  white-space: nowrap;
+}
+#mc_embed_signup form #mc_embed_signup_scroll .mc-field-group input {
+  line-height: 2;
+  background-color: white;
+  border-width: 0px !important;
+  box-shadow: 4px 4px 0 black;
+}
+#mc_embed_signup form #mc_embed_signup_scroll .clear {
+  margin: 0;
+  height: 52px;
+}
+#mc_embed_signup form #mc_embed_signup_scroll .clear input {
+  height: 52px;
+  padding: 0 3rem;
+  font-weight: 700;
+  background-color: white;
+  color: #EC1F27;
+  line-height: 2;
+  transition: box-shadow 0.3s;
+}
+#mc_embed_signup form #mc_embed_signup_scroll .clear input:hover, #mc_embed_signup form #mc_embed_signup_scroll .clear input:focus {
+  box-shadow: 4px 4px 0 black;
+}
+@media screen and (max-width: 1000px) {
+  #mc_embed_signup form #mc_embed_signup_scroll {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+  #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group:first-of-type {
+    margin-left: 0;
+  }
+}
+
+#mce-responses {
+  width: 0 !important;
+}
+
+span.asterisk {
+  color: black !important;
+}
+
 /* Homepage CSS: */
 .homepage-wrapper {
   position: relative;
