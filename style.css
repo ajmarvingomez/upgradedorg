@@ -1466,6 +1466,7 @@ ul.sm__row {
 }
 
 .newsletter__title {
+  padding-bottom: 2px;
   font-family: "Raleway", sans-serif;
   border-bottom: 1px solid #EC1F27;
   color: black;
