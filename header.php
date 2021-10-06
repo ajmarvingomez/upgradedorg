@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
   <?php wp_head(); ?>
   <link rel="stylesheet" href="<?php echo get_site_url() . '/wp-content/themes/dsarichmond/style.css'; ?> ">
+  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/85518fb08bcc284befc646aa3/db36330fff67c3d31fe8af38e.js");</script>
 </head>
 <body>
 <?php wp_body_open(); ?>
