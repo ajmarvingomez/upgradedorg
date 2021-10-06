@@ -3,6 +3,7 @@
 .homepage__resources {
 	position: relative;
 	padding: 0 8.33%;
+	padding-bottom: 3rem;
 }
 
 .homepage-resources__title {
@@ -21,7 +22,7 @@
 		height: 6px;
 		width: 100%;
 		background-color: $dsared;
-		background-image: linear-gradient(to bottom right, rgba(255,0,0,.1), rgba(255,0,0,.3)), url('../img/red-splatter.jpg');
+		background-image: linear-gradient(to bottom right, rgba(255,0,0,.1), rgba(255,0,0,.3)), url('http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg');
 		background-size: cover;
 		background-position: bottom left;
 	}
