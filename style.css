@@ -1,19 +1,16 @@
 /*!
-Theme Name: dsarichmond
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Theme Name: DSA Richmond
+Theme URI: https://github.com/kbdonnally/dsarichmond
+Author: Katherine Donnally
+Author URI: http://kbdonnally.io
+Description: Custom black-white-and-red website for Democratic Socialists of America, featuring responsive design, a clean look, custom navigation, and intuitive design.
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: dsarichmond
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned.
+Tags: custom, responsive, clean, geometric, CSS grid, flexbox
 
 dsarichmond is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
@@ -951,6 +948,77 @@ body p {
 }
 
 /* Color Palette: */
+/* Footer CSS: */
+.footer-wrapper {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 0;
+  background-color: black;
+}
+.footer-wrapper a {
+  color: white;
+}
+
+.footer-border {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  padding: 2rem;
+  border-top: 2px solid #EC1F27;
+  border-bottom: 2px solid #EC1F27;
+}
+
+.footer__logo {
+  position: relative;
+}
+.footer__logo img {
+  height: 72px;
+}
+
+.footer__link-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-list__link {
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  line-height: 2;
+  white-space: nowrap;
+}
+.footer-list__link a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+.footer-list__link a:hover {
+  color: #EC1F27;
+  border-bottom: 1px solid #EC1F27;
+}
+.footer-list__link a:focus {
+  color: #EC1F27;
+  border-bottom: 1px solid #EC1F27;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-wrapper {
+    flex-flow: column nowrap;
+  }
+
+  .footer-border {
+    flex-flow: column nowrap;
+  }
+}
 /* Menu CSS */
 .nav-wrapper {
   position: fixed;
@@ -1081,77 +1149,6 @@ li.nav-list__link:last-of-type a {
   }
 }
 
-/* Footer CSS: */
-.footer-wrapper {
-  position: relative;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 3rem 0;
-  background-color: black;
-}
-.footer-wrapper a {
-  color: white;
-}
-
-.footer-border {
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 75%;
-  padding: 2rem;
-  border-top: 2px solid #EC1F27;
-  border-bottom: 2px solid #EC1F27;
-}
-
-.footer__logo {
-  position: relative;
-}
-.footer__logo img {
-  height: 72px;
-}
-
-.footer__link-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 0;
-  list-style-type: none;
-}
-
-.footer-list__link {
-  padding: 1rem 1.5rem;
-  font-weight: bold;
-  line-height: 2;
-  white-space: nowrap;
-}
-.footer-list__link a {
-  text-decoration: none;
-  color: white;
-  border-bottom: 1px solid white;
-  transition: color 0.3s, border-bottom 0.3s;
-}
-.footer-list__link a:hover {
-  color: #EC1F27;
-  border-bottom: 1px solid #EC1F27;
-}
-.footer-list__link a:focus {
-  color: #EC1F27;
-  border-bottom: 1px solid #EC1F27;
-}
-
-@media screen and (max-width: 768px) {
-  .footer-wrapper {
-    flex-flow: column nowrap;
-  }
-
-  .footer-border {
-    flex-flow: column nowrap;
-  }
-}
 /* Contact Page: */
 .page-wrapper {
   padding: 0 8.33%;
@@ -1601,315 +1598,6 @@ span.asterisk {
   color: #EC1F27 !important;
 }
 
-/* Homepage CSS: */
-.homepage-wrapper {
-  position: relative;
-}
-
-.homepage__landing {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
-  background: black;
-}
-
-.home-landing__text-wrapper {
-  display: grid;
-  grid-template-areas: "backdrop roses" "line line" "subtitle subtitle";
-  width: 83.33%;
-  margin: 0 auto;
-}
-@media screen and (max-width: 900px) {
-  .home-landing__text-wrapper {
-    grid-template-areas: "backdrop" "line" "subtitle" "roses";
-  }
-}
-
-.backdrop {
-  grid-area: backdrop;
-}
-
-.home-landing__title {
-  display: inline-block;
-  margin: 0;
-  padding: 0.5em 0;
-  font-size: 72px;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1;
-  color: white;
-}
-@media screen and (max-width: 900px) {
-  .home-landing__title {
-    font-size: 48px;
-  }
-}
-
-.text {
-  position: relative;
-  color: white;
-  background: black;
-  mix-blend-mode: lighten;
-}
-
-.text::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
-  background-position: center;
-  background-size: cover;
-  mix-blend-mode: multiply;
-}
-
-.home-landing__rose {
-  grid-area: roses;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  transform: translate(0, -36px);
-}
-.home-landing__rose img {
-  height: 100px;
-  padding: 0 0.5rem;
-}
-.home-landing__rose img:nth-of-type(2) {
-  transform: translate(0, -30px);
-}
-@media screen and (max-width: 900px) {
-  .home-landing__rose {
-    transform: translate(0, 0);
-    justify-content: center;
-  }
-  .home-landing__rose img {
-    height: 75px;
-    padding-top: 2rem;
-  }
-}
-
-.home-landing__line {
-  grid-area: line;
-  width: 100%;
-  height: 2px;
-  background-color: white;
-}
-
-.home-landing__subtitle {
-  grid-area: subtitle;
-  font-family: "Raleway", sans-serif;
-  font-weight: 100;
-  font-size: 2.5rem;
-  font-style: italic;
-  color: white;
-}
-@media screen and (max-width: 900px) {
-  .home-landing__subtitle {
-    font-size: 1.75rem;
-  }
-}
-
-/* About: */
-.homepage__about {
-  padding-top: 3rem;
-}
-
-.homepage-about__text-wrapper {
-  position: relative;
-  display: grid;
-  padding: 0 8.33%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "t t t i i" "t t t . .";
-}
-@media screen and (max-width: 900px) {
-  .homepage-about__text-wrapper {
-    grid-template-columns: 1fr;
-    grid-template-areas: "t" "i";
-  }
-}
-
-.homepage-about__title {
-  position: relative;
-  margin: 0;
-  margin-bottom: 0.75em;
-  padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 2.5rem;
-}
-.homepage-about__title::before {
-  content: "";
-  position: absolute;
-  top: calc(100% - 8px);
-  left: 0;
-  display: block;
-  height: 6px;
-  width: 100%;
-  background-color: #EC1F27;
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
-  background-size: cover;
-  background-position: bottom left;
-}
-
-.homepage-about__text {
-  position: relative;
-  grid-area: t;
-}
-
-.homepage-about__involved {
-  position: relative;
-  grid-area: i;
-  margin-left: 4.167vw;
-  padding: 1em;
-  background-color: white;
-  border: 2px solid black;
-  box-shadow: 4px 4px 0 black;
-  margin-top: 3.5rem;
-}
-@media screen and (max-width: 900px) {
-  .homepage-about__involved {
-    margin-left: 0;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-  }
-}
-
-.homepage-involved__title {
-  margin: 0;
-  padding: 0.25em 0;
-  padding-top: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 2.5rem;
-}
-
-.homepage-involved__text {
-  margin-top: 0.5rem;
-}
-
-.homepage-involved__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.homepage-involved__list-item {
-  position: relative;
-  margin: 0.5em;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.homepage-involved__list-item a {
-  text-decoration: none;
-  color: #EC1F27;
-  transition: color 0.3s;
-}
-.homepage-involved__list-item a:hover, .homepage-involved__list-item a:active {
-  color: black;
-}
-
-.homepage-involved__logo {
-  height: 0px;
-  display: block;
-  float: right;
-}
-
-/* Resources */
-.homepage__resources {
-  position: relative;
-  padding: 0 8.33%;
-  padding-bottom: 3rem;
-}
-
-.homepage-resources__title {
-  position: relative;
-  margin: 0;
-  margin-bottom: 0.75em;
-  padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 2.5rem;
-}
-.homepage-resources__title::before {
-  content: "";
-  position: absolute;
-  top: calc(100% - 8px);
-  left: 0;
-  display: block;
-  height: 6px;
-  width: 100%;
-  background-color: #EC1F27;
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
-  background-size: cover;
-  background-position: bottom left;
-}
-
-.homepage-resources__item-list {
-  /* position: relative;
-  display: flex;
-  flex-flow: row wrap; */
-  column-count: auto;
-  column-width: 350px;
-  margin: 0 auto;
-  padding-left: 0;
-  list-style-type: none;
-}
-@media screen and (max-width: 1000px) {
-  .homepage-resources__item-list {
-    column-width: 100%;
-  }
-}
-
-.homepage-resources__item {
-  -webkit-column-break-inside: avoid;
-  break-inside: avoid;
-  page-break-inside: avoid;
-  padding: 1rem;
-  margin: 0.5rem;
-  margin-left: 0;
-  margin-bottom: 1.5rem;
-  margin-right: 1rem;
-  border: 2px solid black;
-  box-shadow: 4px 4px 0 black;
-  background-color: white;
-}
-.homepage-resources__item:first-of-type {
-  margin-top: 0;
-}
-.homepage-resources__item a {
-  text-decoration: none;
-  font-weight: 700;
-}
-.homepage-resources__link--1 a {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
-  color: #EC1F27;
-  transition: border 0.3s;
-}
-.homepage-resources__link--1 a:hover, .homepage-resources__link--1 a:focus {
-  border-bottom: 4px solid #EC1F27;
-}
-
-.homepage-resources__link--2 {
-  display: inline-block;
-  background-color: #EC1F27;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-.homepage-resources__link--2:hover, .homepage-resources__link--2:focus {
-  background-color: black;
-}
-.homepage-resources__link--2 a {
-  display: inline-block;
-  padding: 0.5rem;
-  color: white;
-}
-
 /* About Page CSS: */
 .about-wrapper {
   padding-top: 90px;
@@ -1956,105 +1644,6 @@ span.asterisk {
   padding: 0 8.33%;
 }
 
-/* Get Involved CSS: */
-.join-wrapper {
-  position: relative;
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-template-areas: "text form";
-  margin: 0 8.33%;
-  padding-top: 72px;
-  padding-bottom: 3rem;
-}
-
-.join-text-wrapper {
-  grid-area: text;
-}
-
-.join-title-wrapper {
-  position: relative;
-}
-
-.join__title {
-  position: relative;
-  margin-right: 8.33%;
-  margin-bottom: 0.75em;
-  padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 3rem;
-}
-.join__title::before {
-  content: "";
-  position: absolute;
-  top: calc(100% - 8px);
-  left: 0;
-  display: block;
-  height: 6px;
-  width: 100%;
-  background-color: #EC1F27;
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
-  background-size: cover;
-  background-position: bottom left;
-}
-
-.join__text {
-  padding-right: 2rem;
-}
-
-.join__form {
-  grid-area: form;
-  width: 100%;
-  max-width: 800px;
-  margin: 2em auto;
-}
-.join__form div[role=form] {
-  position: relative;
-  padding-top: 1rem;
-}
-.join__form div[role=form] p {
-  margin: 0.75rem;
-}
-.join__form div[role=form] p input {
-  width: 100%;
-  padding-left: 8px;
-  border: 2px solid #EC1F27;
-  line-height: 3;
-  border-radius: 10px;
-  outline-width: 0px;
-}
-.join__form p input[type=submit] {
-  font-weight: 700;
-  background-color: #EC1F27;
-  color: white;
-  border: 0px solid black !important;
-  cursor: pointer;
-  transition: background-color 0.3s, border 0.3s;
-}
-
-textarea[name=your-message] {
-  padding-left: 8px;
-  line-height: 1.5;
-  border: 2px solid #EC1F27;
-  border-radius: 10px;
-  outline-width: 0px;
-}
-
-p input[type=submit]:hover, p input[type=submit]:focus {
-  border: 2px solid black !important;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-@media screen and (max-width: 1000px) {
-  .join-wrapper {
-    grid-template-columns: 1fr;
-    grid-template-areas: "text" "form";
-  }
-}
-@media screen and (max-width: 800px) {
-  .join__title {
-    font-size: 2.5rem;
-  }
-}
 .blog-wrapper {
   max-width: calc(900px + 16.67vw);
   margin: 0 auto;
@@ -2203,107 +1792,6 @@ p input[type=submit]:hover, p input[type=submit]:focus {
   }
 }
 
-/* Resources */
-.resources-title-wrapper {
-  position: relative;
-  margin-top: 72px;
-  padding: 0 8.33%;
-}
-
-.resources__title {
-  position: relative;
-  margin: 0;
-  margin-bottom: 0.75em;
-  padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 3rem;
-}
-.resources__title::before {
-  content: "";
-  position: absolute;
-  top: calc(100% - 8px);
-  left: 0;
-  display: block;
-  height: 6px;
-  width: 100%;
-  background-color: #EC1F27;
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
-  background-size: cover;
-  background-position: bottom left;
-}
-@media screen and (max-width: 800px) {
-  .resources__title {
-    font-size: 2.5rem;
-  }
-}
-
-.resources__text {
-  margin-bottom: 2rem;
-  padding: 0 8.33%;
-}
-.resources__content {
-  padding: 0 8.33%;
-  padding-bottom: 3rem;
-}
-
-.resources__item-list {
-  column-count: auto;
-  column-width: 350px;
-  margin: 0 auto;
-  padding-left: 0;
-  list-style-type: none;
-}
-@media screen and (max-width: 1000px) {
-  .resources__item-list {
-    column-width: 100%;
-  }
-}
-
-.resources__item {
-  -webkit-column-break-inside: avoid;
-  break-inside: avoid;
-  page-break-inside: avoid;
-  padding: 1rem;
-  margin: 0.5rem;
-  margin-left: 0;
-  margin-bottom: 1.5rem;
-  margin-right: 1rem;
-  border: 2px solid black;
-  box-shadow: 4px 4px 0 black;
-  background-color: white;
-}
-.resources__item:first-of-type {
-  margin-top: 0;
-}
-.resources__item a {
-  text-decoration: none;
-  font-weight: 700;
-}
-.resources__link--1 a {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
-  color: #EC1F27;
-  transition: border 0.3s;
-}
-.resources__link--1 a:hover, .resources__link--1 a:focus {
-  border-bottom: 4px solid #EC1F27;
-}
-
-.resources__link--2 {
-  display: inline-block;
-  background-color: #EC1F27;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-.resources__link--2:hover, .resources__link--2:focus {
-  background-color: black;
-}
-.resources__link--2 a {
-  display: inline-block;
-  padding: 0.5rem;
-  color: white;
-}
-
 /* Contact Page: */
 .contact-wrapper {
   padding: 0 8.33%;
@@ -2397,6 +1885,417 @@ p input[type=submit]:hover, p input[type=submit]:focus {
   }
 }
 
+/* Homepage CSS: */
+/*** Landing Page: ***/
+.homepage-wrapper {
+  position: relative;
+}
+
+.homepage__landing {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: black;
+}
+
+.home-landing__text-wrapper {
+  display: grid;
+  grid-template-areas: "backdrop roses" "line line" "subtitle subtitle";
+  width: 83.33%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 900px) {
+  .home-landing__text-wrapper {
+    grid-template-areas: "backdrop" "line" "subtitle" "roses";
+  }
+}
+
+.backdrop {
+  grid-area: backdrop;
+}
+
+.home-landing__title {
+  display: inline-block;
+  margin: 0;
+  padding: 0.5em 0;
+  font-size: 72px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  .home-landing__title {
+    font-size: 48px;
+  }
+}
+
+.text {
+  position: relative;
+  color: white;
+  background: black;
+  mix-blend-mode: lighten;
+}
+
+.text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: multiply;
+}
+
+.home-landing__rose {
+  grid-area: roses;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transform: translate(0, -36px);
+}
+.home-landing__rose img {
+  height: 100px;
+  padding: 0 0.5rem;
+}
+.home-landing__rose img:nth-of-type(2) {
+  transform: translate(0, -30px);
+}
+@media screen and (max-width: 900px) {
+  .home-landing__rose {
+    transform: translate(0, 0);
+    justify-content: center;
+  }
+  .home-landing__rose img {
+    height: 75px;
+    padding-top: 2rem;
+  }
+}
+
+.home-landing__line {
+  grid-area: line;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.home-landing__subtitle {
+  grid-area: subtitle;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 2.5rem;
+  font-style: italic;
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  .home-landing__subtitle {
+    font-size: 1.75rem;
+  }
+}
+
+/*** About Section: ***/
+/* About: */
+.homepage__about {
+  padding-top: 3rem;
+}
+
+.homepage-about__text-wrapper {
+  position: relative;
+  display: grid;
+  padding: 0 8.33%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "t t t i i" "t t t . .";
+}
+@media screen and (max-width: 900px) {
+  .homepage-about__text-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: "t" "i";
+  }
+}
+
+.homepage-about__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 0.75em;
+  padding: 0.25em 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+}
+.homepage-about__title::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 8px);
+  left: 0;
+  display: block;
+  height: 6px;
+  width: 100%;
+  background-color: #EC1F27;
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.homepage-about__text {
+  position: relative;
+  grid-area: t;
+}
+
+.homepage-about__involved {
+  position: relative;
+  grid-area: i;
+  margin-left: 4.167vw;
+  padding: 1em;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 4px 4px 0 black;
+  margin-top: 3.5rem;
+}
+@media screen and (max-width: 900px) {
+  .homepage-about__involved {
+    margin-left: 0;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+}
+
+.homepage-involved__title {
+  margin: 0;
+  padding: 0.25em 0;
+  padding-top: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+}
+
+.homepage-involved__text {
+  margin-top: 0.5rem;
+}
+
+.homepage-involved__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage-involved__list-item {
+  position: relative;
+  margin: 0.5em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.homepage-involved__list-item a {
+  text-decoration: none;
+  color: #EC1F27;
+  transition: color 0.3s;
+}
+.homepage-involved__list-item a:hover, .homepage-involved__list-item a:active {
+  color: black;
+}
+
+.homepage-involved__logo {
+  height: 0px;
+  display: block;
+  float: right;
+}
+
+/*** Resources: ***/
+/* Resources */
+.homepage__resources {
+  position: relative;
+  padding: 0 8.33%;
+  padding-bottom: 3rem;
+}
+
+.homepage-resources__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 0.75em;
+  padding: 0.25em 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+}
+.homepage-resources__title::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 8px);
+  left: 0;
+  display: block;
+  height: 6px;
+  width: 100%;
+  background-color: #EC1F27;
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.homepage-resources__item-list {
+  /* position: relative;
+  display: flex;
+  flex-flow: row wrap; */
+  column-count: auto;
+  column-width: 350px;
+  margin: 0 auto;
+  padding-left: 0;
+  list-style-type: none;
+}
+@media screen and (max-width: 1000px) {
+  .homepage-resources__item-list {
+    column-width: 100%;
+  }
+}
+
+.homepage-resources__item {
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  padding: 1rem;
+  margin: 0.5rem;
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+  border: 2px solid black;
+  box-shadow: 4px 4px 0 black;
+  background-color: white;
+}
+.homepage-resources__item:first-of-type {
+  margin-top: 0;
+}
+.homepage-resources__item a {
+  text-decoration: none;
+  font-weight: 700;
+}
+.homepage-resources__link--1 a {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: #EC1F27;
+  transition: border 0.3s;
+}
+.homepage-resources__link--1 a:hover, .homepage-resources__link--1 a:focus {
+  border-bottom: 4px solid #EC1F27;
+}
+
+.homepage-resources__link--2 {
+  display: inline-block;
+  background-color: #EC1F27;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.homepage-resources__link--2:hover, .homepage-resources__link--2:focus {
+  background-color: black;
+}
+.homepage-resources__link--2 a {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+}
+
+/* Get Involved CSS: */
+.join-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-areas: "text form";
+  margin: 0 8.33%;
+  padding-top: 72px;
+  padding-bottom: 3rem;
+}
+
+.join-text-wrapper {
+  grid-area: text;
+}
+
+.join-title-wrapper {
+  position: relative;
+}
+
+.join__title {
+  position: relative;
+  margin-right: 8.33%;
+  margin-bottom: 0.75em;
+  padding: 0.25em 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+}
+.join__title::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 8px);
+  left: 0;
+  display: block;
+  height: 6px;
+  width: 100%;
+  background-color: #EC1F27;
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.join__text {
+  padding-right: 2rem;
+}
+
+.join__form {
+  grid-area: form;
+  width: 100%;
+  max-width: 800px;
+  margin: 2em auto;
+}
+.join__form div[role=form] {
+  position: relative;
+  padding-top: 1rem;
+}
+.join__form div[role=form] p {
+  margin: 0.75rem;
+}
+.join__form div[role=form] p input {
+  width: 100%;
+  padding-left: 8px;
+  border: 2px solid #EC1F27;
+  line-height: 3;
+  border-radius: 10px;
+  outline-width: 0px;
+}
+.join__form p input[type=submit] {
+  font-weight: 700;
+  background-color: #EC1F27;
+  color: white;
+  border: 0px solid black !important;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+textarea[name=your-message] {
+  padding-left: 8px;
+  line-height: 1.5;
+  border: 2px solid #EC1F27;
+  border-radius: 10px;
+  outline-width: 0px;
+}
+
+p input[type=submit]:hover, p input[type=submit]:focus {
+  border: 2px solid black !important;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 1000px) {
+  .join-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: "text" "form";
+  }
+}
+@media screen and (max-width: 800px) {
+  .join__title {
+    font-size: 2.5rem;
+  }
+}
 .projects-title-wrapper {
   position: relative;
   margin-top: 72px;
@@ -2520,4 +2419,104 @@ p input[type=submit]:hover, p input[type=submit]:focus {
   padding: 0.5rem;
   color: white;
   text-decoration: none;
+}
+/* Resources */
+.resources-title-wrapper {
+  position: relative;
+  margin-top: 72px;
+  padding: 0 8.33%;
+}
+
+.resources__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 0.75em;
+  padding: 0.25em 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+}
+.resources__title::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 8px);
+  left: 0;
+  display: block;
+  height: 6px;
+  width: 100%;
+  background-color: #EC1F27;
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
+  background-size: cover;
+  background-position: bottom left;
+}
+@media screen and (max-width: 800px) {
+  .resources__title {
+    font-size: 2.5rem;
+  }
+}
+
+.resources__text {
+  margin-bottom: 2rem;
+  padding: 0 8.33%;
+}
+.resources__content {
+  padding: 0 8.33%;
+  padding-bottom: 3rem;
+}
+
+.resources__item-list {
+  column-count: auto;
+  column-width: 350px;
+  margin: 0 auto;
+  padding-left: 0;
+  list-style-type: none;
+}
+@media screen and (max-width: 1000px) {
+  .resources__item-list {
+    column-width: 100%;
+  }
+}
+
+.resources__item {
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  padding: 1rem;
+  margin: 0.5rem;
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+  border: 2px solid black;
+  box-shadow: 4px 4px 0 black;
+  background-color: white;
+}
+.resources__item:first-of-type {
+  margin-top: 0;
+}
+.resources__item a {
+  text-decoration: none;
+  font-weight: 700;
+}
+.resources__link--1 a {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: #EC1F27;
+  transition: border 0.3s;
+}
+.resources__link--1 a:hover, .resources__link--1 a:focus {
+  border-bottom: 4px solid #EC1F27;
+}
+
+.resources__link--2 {
+  display: inline-block;
+  background-color: #EC1F27;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.resources__link--2:hover, .resources__link--2:focus {
+  background-color: black;
+}
+.resources__link--2 a {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
 }

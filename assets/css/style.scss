@@ -17,8 +17,8 @@ body {
 @import '_scss/_includes/colors';
 
 // nav
-@import '_scss/_includes/menu';
 @import '_scss/_includes/footer';
+@import '_scss/_includes/menu';
 
 // layouts
 @import '_scss/_layouts/page';
@@ -28,15 +28,13 @@ body {
 @import '_scss/_includes/social-media';
 @import '_scss/_includes/newsletter';
 
-// homepage
-@import '_scss/_homepage/landing-page';
-@import '_scss/_homepage/about-section';
-@import '_scss/_homepage/resources-section';
-
 // pages
-@import '_scss/_pages/about-page';
-@import '_scss/_pages/join';
+@import '_scss/_pages/about';
 @import '_scss/_pages/blog';
-@import '_scss/_pages/resources-page';
 @import '_scss/_pages/contact';
+@import '_scss/_pages/homepage';
+@import '_scss/_pages/join';
 @import '_scss/_pages/projects';
+@import '_scss/_pages/resources';
+
+
