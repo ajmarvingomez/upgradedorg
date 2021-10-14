@@ -21,6 +21,8 @@ body {
 @import '_scss/_includes/menu';
 
 // layouts
+@import '_scss/_layouts/archive';
+@import '_scss/_layouts/content';
 @import '_scss/_layouts/page';
 @import '_scss/_layouts/single';
 
@@ -29,6 +31,7 @@ body {
 @import '_scss/_includes/newsletter';
 
 // pages
+@import '_scss/_pages/404';
 @import '_scss/_pages/about';
 @import '_scss/_pages/blog';
 @import '_scss/_pages/contact';
@@ -36,3 +39,4 @@ body {
 @import '_scss/_pages/join';
 @import '_scss/_pages/projects';
 @import '_scss/_pages/resources';
+@import '_scss/_pages/search';

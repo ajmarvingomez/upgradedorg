@@ -21,9 +21,9 @@
 					</div>
 
 					<div class="blog-entry__metadata">
-						<div class="blog-entry__author"><span>By:</span> <span><?php the_author(); ?></span></div>
+						<div class="blog-entry__author"><span><?php dsarichmond_posted_by(); ?></span></div>
 						<div class="blog-entry__slashes"> // </div>
-						<div class="blog-entry__date"><span>Posted:</span> <span><?php the_date(); ?></span></div>
+						<div class="blog-entry__date"><span><?php dsarichmond_posted_on(); ?></span></div>
 					</div>
 					
 					<article class="blog-entry__preview-wrapper">

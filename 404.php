@@ -6,55 +6,24 @@
  *
  * @package dsarichmond
  */
-
-get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<?php get_header(); ?>
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'dsarichmond' ); ?></h1>
-			</header><!-- .page-header -->
+<main class="four-wrapper">
 
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'dsarichmond' ); ?></p>
+	<section class="four-content">
+		<h1 class="four__title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'dsarichmond' ); ?></h1>
 
-					<?php
-					get_search_form();
+		<p class="four__text"><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'dsarichmond' ); ?></p>
 
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
+		<div class="four__search"><?php get_search_form(); ?></div>
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'dsarichmond' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
+		<div class="four__posts"><?php the_widget( 'WP_Widget_Recent_Posts' ); ?></div>
+	</section>
 
-					<?php
-					/* translators: %1$s: smiley */
-					$dsarichmond_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'dsarichmond' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$dsarichmond_archive_content" );
+</main>
 
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
+<?php get_template_part('template-parts/newsletter') ?>
 
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-
-	</main><!-- #main -->
-
-<?php
-get_footer();
+<?php get_footer(); ?>

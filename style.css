@@ -1149,6 +1149,56 @@ li.nav-list__link:last-of-type a {
   }
 }
 
+/* Archive Styles: */
+.archive-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 8.33%;
+  padding-top: 72px;
+}
+
+.archive-header__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  border-bottom: 2px solid black;
+}
+
+/* Content Layout: */
+.entry-header__title {
+  font-family: "Raleway", sans-serif;
+}
+.entry-header__title a {
+  color: black;
+  text-decoration: none;
+}
+
+.entry-meta {
+  font-family: "Inconsolata", monospace;
+}
+
+.entry-content a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid #EC1F27;
+  transition: background-color 0.3s;
+}
+.entry-content a:hover, .entry-content a:focus {
+  background-color: #EC1F27;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #EC1F27;
+  border-bottom: 0px solid black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
 /* Contact Page: */
 .page-wrapper {
   padding: 0 8.33%;
@@ -1307,10 +1357,12 @@ li.nav-list__link:last-of-type a {
   font-family: "Inconsolata", monospace;
   color: #EC1F27;
 }
+.single__metadata span {
+  color: #EC1F27;
+}
 
 .single__slashes {
   padding: 0 0.5rem;
-  color: black;
 }
 
 /* End metadata */
@@ -1598,6 +1650,66 @@ span.asterisk {
   color: #EC1F27 !important;
 }
 
+.four-wrapper {
+  padding: 3rem 8.33%;
+  padding-top: 72px;
+}
+
+.four-content h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  padding-bottom: 0.25em;
+}
+.four-content h1 strong {
+  font-weight: 900;
+}
+.four-content h1 {
+  font-size: 3rem;
+}
+
+.four__search .search-field {
+  height: 34px;
+  line-height: 34px;
+}
+.four__search .search-submit {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: #EC1F27;
+  transform: translate(0, 1px);
+}
+
+.four__posts ul {
+  position: relative;
+  padding-left: 1.75em;
+  line-height: 1.5;
+  list-style-type: none;
+}
+.four__posts ul li {
+  position: relative;
+}
+.four__posts ul li:before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 8px;
+  display: block;
+  height: 6px;
+  width: 6px;
+  background-color: #EC1F27;
+  border-radius: 50%;
+}
+.four__posts ul li a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid #EC1F27;
+  transition: background-color 0.3s;
+}
+.four__posts ul li a:hover, .four__posts ul li a:focus {
+  background-color: #EC1F27;
+}
+
 /* About Page CSS: */
 .about-wrapper {
   padding-top: 90px;
@@ -1755,10 +1867,17 @@ span.asterisk {
   font-family: "Inconsolata", monospace;
   color: #EC1F27;
 }
+.blog-entry__metadata a {
+  color: red;
+  text-decoration: none;
+  transition: border-bottom 0.3s;
+}
+.blog-entry__metadata a:hover, .blog-entry__metadata a:focus {
+  border-bottom: 1px solid red;
+}
 
 .blog-entry__slashes {
   padding: 0 0.5rem;
-  color: black;
 }
 
 @media screen and (max-width: 600px) {
@@ -2519,4 +2638,65 @@ p input[type=submit]:hover, p input[type=submit]:focus {
   display: inline-block;
   padding: 0.5rem;
   color: white;
+}
+
+.search-wrapper {
+  padding: 3rem 8.33%;
+}
+
+.post-thumbnail img {
+  max-height: 30%;
+  max-width: 30%;
+}
+
+.entry__title a {
+  color: black;
+  text-decoration: none;
+  transition: border 0.3s;
+}
+.entry__title a:hover, .entry__title a:focus {
+  border-bottom: 2px solid black;
+}
+
+.entry-meta {
+  padding-bottom: 2rem;
+}
+.entry-meta a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  transition: border 0.3s;
+}
+.nav-previous {
+  padding-top: 1rem;
+}
+.nav-previous a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  transition: border 0.3s, color 0.3s;
+}
+.nav-previous a:hover, .nav-previous a:focus {
+  border-bottom: 1px solid #EC1F27;
+  color: #EC1F27;
+}
+
+.entry-footer .cat-links,
+.entry-footer .tags-links {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: 700;
+}
+.entry-footer .cat-links a,
+.entry-footer .tags-links a {
+  padding-left: 6px;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.entry-footer .cat-links a:hover, .entry-footer .cat-links a:focus,
+.entry-footer .tags-links a:hover,
+.entry-footer .tags-links a:focus {
+  color: #EC1F27;
 }

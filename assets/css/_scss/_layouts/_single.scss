@@ -97,6 +97,9 @@
 	flex-flow: row wrap;
 	font-family: "Inconsolata", monospace;
 	color: $dsared;
+	span {
+		color: $dsared;
+	}
 }
 
 .single__author {
@@ -105,7 +108,7 @@
 
 .single__slashes {
 	padding: 0 .5rem;
-	color: black;
+//	color: black;
 }
 
 .single__date {
