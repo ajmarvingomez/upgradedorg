@@ -1151,7 +1151,7 @@ li.nav-list__link:last-of-type a {
 
 /* Archive Styles: */
 .archive-wrapper {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 3rem 8.33%;
   padding-top: 72px;
@@ -1161,12 +1161,12 @@ li.nav-list__link:last-of-type a {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-size: 2.5rem;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #EC1F27;
 }
 
 /* Content Layout: */
 .entry-header__title {
-  font-family: "Raleway", sans-serif;
+  font-weight: 900;
 }
 .entry-header__title a {
   color: black;
@@ -1175,6 +1175,11 @@ li.nav-list__link:last-of-type a {
 
 .entry-meta {
   font-family: "Inconsolata", monospace;
+  color: darkgray;
+}
+.entry-meta a {
+  color: darkgray !important;
+  border-bottom: 1px solid darkgray !important;
 }
 
 .entry-content a {
@@ -1197,6 +1202,16 @@ hr {
 a {
   color: black;
   text-decoration: none;
+}
+
+.entry__read-more {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  background-color: #EC1F27;
+  color: white !important;
+  border-radius: 8px;
 }
 
 /* Contact Page: */

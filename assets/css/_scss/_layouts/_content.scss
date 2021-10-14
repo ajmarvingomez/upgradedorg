@@ -10,7 +10,8 @@
 
 .entry-header__title {
 	//border-bottom: 1px solid black;
-	font-family: "Raleway", sans-serif;
+	//font-family: "Raleway", sans-serif;
+	font-weight: 900;
 	a {
 		color: black;
 		text-decoration: none;
@@ -19,6 +20,11 @@
 
 .entry-meta {
 	font-family: "Inconsolata", monospace;
+	color: darkgray;
+	a {
+		color: darkgray !important;
+		border-bottom: 1px solid darkgray !important;
+	}
 }
 
 .entry-content {
@@ -43,4 +49,14 @@ hr {
 a {
 	color: black;
 	text-decoration: none;
+}
+
+.entry__read-more {
+	display: inline-block;
+	margin-bottom: 1rem;
+	padding: .5rem 1rem;
+	font-weight: 700;
+	background-color: $dsared;
+	color: white !important;
+	border-radius: 8px;
 }
