@@ -22,9 +22,9 @@ get_header();
 	        <h1 class="home-landing__title text">DSA<br/>Richmond</h1>
 	      </div>
 	      <div class="home-landing__rose">
-	        <img src="./wp-content/uploads/2021/09/rose-vector.svg" alt="rose">
-	        <img src="./wp-content/uploads/2021/09/rose-vector.svg" alt="rose">
-	        <img src="./wp-content/uploads/2021/09/rose-vector.svg" alt="rose">
+	        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/rose-vector.svg" alt="rose">
+	        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/rose-vector.svg" alt="rose">
+	        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/rose-vector.svg" alt="rose">
 	      </div>
 	      <div class="home-landing__line"></div>
 	      <h2 class="home-landing__subtitle">Southerners for Solidarity</h2>

@@ -26,7 +26,7 @@
   <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon/favicon32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon/favicon64.png" sizes="64x64" type="image/png">
   <?php wp_head(); ?>
-  <link rel="stylesheet" href="<?php echo get_site_url() . '/wp-content/themes/dsarichmond/style.css'; ?> ">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css">
   <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/85518fb08bcc284befc646aa3/db36330fff67c3d31fe8af38e.js");</script>
 </head>
 <body>
@@ -34,10 +34,10 @@
 	<nav class="nav-wrapper">
 		<div class="nav-content-wrapper">
 	 		<div class="nav-content__img-wrapper">
-	      		<a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_site_url() . '/wp-content/uploads/2021/09/logo_dsa-richmond.svg'; ?>" alt="Richmond DSA logos"></a>
+	      		<a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/logo_dsa-richmond.svg'; ?>" alt="Richmond DSA logos"></a>
 	    	</div>
 	    <div class="nav-hamburger-icon">
-	    	<img src="<?php echo get_site_url() . '/wp-content/uploads/2021/09/hamburger-icon.svg'?>" alt="hamburger icon">
+	    	<img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/hamburger-icon.svg'?>" alt="hamburger icon">
 	    </div>
 	    <div class="nav-close-icon nav-content--hide"><img src="<?php echo get_site_url() . '/wp-content/uploads/2021/09/x.svg' ?>" alt="hamburger icon"></div>
 	    <ul class="nav-content__link-list">

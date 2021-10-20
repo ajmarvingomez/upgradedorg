@@ -15,7 +15,7 @@
 	<footer class="footer-wrapper">
 		<div class="footer-border">
 
-			<div class="footer__logo"><img alt="red and white DSA hands logo" src="http://dsarichmond.local/wp-content/uploads/2021/09/dsa-logo-red-white.svg"></div>
+			<div class="footer__logo"><img alt="red and white DSA hands logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/dsa-logo-red-white.svg"></div>
 
 			<ul class="footer__link-list">
 			  <li class="footer-list__link"><a href="<?php echo get_site_url() . '/about' ?>">About</a></li>
