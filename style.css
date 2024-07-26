@@ -2149,7 +2149,7 @@ span.asterisk {
 
 .homepage-about__text-wrapper {
   position: relative;
-  display: grid;
+
   padding: 0 8.33%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "t t t i i" "t t t . .";
@@ -2178,25 +2178,22 @@ span.asterisk {
   height: 6px;
   width: 100%;
   background-color: #EC1F27;
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.org/wp-content/uploads/2021/10/red-splatter.jpg");
   background-size: cover;
   background-position: bottom left;
 }
 
 .homepage-about__text {
   position: relative;
-  grid-area: t;
 }
 
 .homepage-about__involved {
   position: relative;
-  grid-area: i;
-  margin-left: 4.167vw;
+
   padding: 1em;
   background-color: white;
   border: 2px solid black;
   box-shadow: 4px 4px 0 black;
-  margin-top: 3.5rem;
 }
 @media screen and (max-width: 900px) {
   .homepage-about__involved {
@@ -2271,7 +2268,7 @@ span.asterisk {
   height: 6px;
   width: 100%;
   background-color: #EC1F27;
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.org/wp-content/uploads/2021/10/red-splatter.jpg");
   background-size: cover;
   background-position: bottom left;
 }
