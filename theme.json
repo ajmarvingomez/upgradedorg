@@ -1,0 +1,47 @@
+{
+	"version": 2,
+	"settings": {
+		"color": {
+			"background": true,
+			"custom": true,
+			"customDuotone": true,
+			"customGradient": true,
+			"defaultDuotone": true,
+			"defaultGradients": true,
+			"defaultPalette": true,
+			"duotone": [],
+			"gradients": [],
+			"link": true,
+			"palette": [
+				{ "color": "#EC1F27", "name": "DSA Red", "slug": "dsa-red" },
+				{ "color": "#F04C53", "name": "DSA Red Tint 1", "slug": "dsa-red-1" },
+				{ "color": "#F4797E", "name": "DSA Red Tint 2", "slug": "dsa-red-2" },
+				{ "color": "#F7A5A9", "name": "DSA Red Tint 3", "slug": "dsa-red-3" },
+				{ "color": "#FBD2D4", "name": "DSA Red Tint 4", "slug": "dsa-red-4" },
+				{ "color": "#231F20", "name": "DSA Black", "slug": "dsa-black" },
+				{
+					"color": "#3B3838",
+					"name": "DSA Black Tint 1",
+					"slug": "dsa-black-1"
+				},
+				{
+					"color": "#605C5C",
+					"name": "DSA Black Tint 2",
+					"slug": "dsa-black-2"
+				},
+				{
+					"color": "#8C8989",
+					"name": "DSA Black Tint 3",
+					"slug": "dsa-black-3"
+				},
+				{
+					"color": "#C1C0BF",
+					"name": "DSA Black Tint 4",
+					"slug": "dsa-black-4"
+				},
+				{ "color": "#FFFFFF", "name": "White", "slug": "dsa-white" }
+			],
+			"text": true
+		}
+	}
+}
