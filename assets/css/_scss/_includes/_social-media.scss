@@ -7,8 +7,10 @@
 	margin: 0;
 	margin-bottom: .75em;
 	padding: .25em 0;
-	font-family: "Raleway", sans-serif;
+	font-family: var(--wp--preset--font-family--primary);
+
 	font-size: 2.5rem;
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -18,7 +20,7 @@
 		height: 6px;
 		width: 100%;
 		background-color: $dsared;
-		background-image: linear-gradient(to bottom right, rgba(255,0,0,.1), rgba(255,0,0,.3)), url('http://dsarichmond.org/wp-content/uploads/2021/10/red-splatter.jpg');
+		background-image: linear-gradient(to bottom right, rgba(255, 0, 0, .1), rgba(255, 0, 0, .3)), url('http://dsarichmond.org/wp-content/uploads/2021/10/red-splatter.jpg');
 		background-size: cover;
 		background-position: bottom left;
 	}
@@ -28,9 +30,7 @@
 	margin-bottom: 3rem;
 }
 
-.sm__flex-wrapper {
-
-}
+.sm__flex-wrapper {}
 
 ul.sm__row {
 	position: relative;
@@ -43,6 +43,7 @@ ul.sm__row {
 
 .sm__svg {
 	padding-right: 1rem;
+
 	img {
 		height: 32px;
 	}
@@ -60,7 +61,9 @@ ul.sm__row {
 		color: $dsared;
 		border-bottom: 1px solid $dsared;
 		transition: color .3s, border-bottom .3s;
-		&:hover, &:focus {
+
+		&:hover,
+		&:focus {
 			color: black;
 			border-bottom: 1px solid black;
 		}

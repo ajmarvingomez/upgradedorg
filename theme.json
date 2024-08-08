@@ -42,6 +42,117 @@
 				{ "color": "#FFFFFF", "name": "White", "slug": "dsa-white" }
 			],
 			"text": true
+		},
+		"typography": {
+			"fontFamily": "Manifold, sans-serif",
+			"fontFamilies": [
+				{
+					"name": "Primary (Manifold)",
+					"slug": "primary",
+					"fontFamily": "Manifold, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Manifold",
+							"fontWeight": "300 500",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": ["file:./assets/fonts/manifold/ManifoldDSA-Medium.woff2"]
+						},
+						{
+							"fontFamily": "Manifold",
+							"fontWeight": "300 500",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/manifold/ManifoldDSA-MediumItalic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Manifold",
+							"fontWeight": "600 700",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": ["file:./assets/fonts/manifold/ManifoldDSA-DemiBold.woff2"]
+						},
+						{
+							"fontFamily": "Manifold",
+							"fontWeight": "600 700",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/manifold/ManifoldDSA-DemiBoldItalic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Manifold",
+							"fontWeight": "800 900",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": ["file:./assets/fonts/manifold/ManifoldDSA-Bold.woff2"]
+						},
+						{
+							"fontFamily": "Manifold",
+							"fontWeight": "800 900",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/manifold/ManifoldDSA-BoldItalic.woff2"
+							]
+						}
+					]
+				},
+				{
+					"name": "Alternate (Klima)",
+					"slug": "alternate",
+					"fontFamily": "Klima, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Klima",
+							"fontWeight": "300 500",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": ["file:./assets/fonts/klima/klima-regular-web.woff2"]
+						},
+						{
+							"fontFamily": "Klima",
+							"fontWeight": "300 500",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/klima/klima-regular-italic-web.woff2"
+							]
+						},
+						{
+							"fontFamily": "Klima",
+							"fontWeight": "600 700",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": ["file:./assets/fonts/klima/klima-medium-web.woff2"]
+						},
+						{
+							"fontFamily": "Klima",
+							"fontWeight": "600 700",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": ["file:./assets/fonts/klima/klima-medium-italic-web.woff2"]
+						},
+						{
+							"fontFamily": "Klima",
+							"fontWeight": "800 900",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": ["file:./assets/fonts/klima/klima-bold-web.woff2"]
+						},
+						{
+							"fontFamily": "Klima",
+							"fontWeight": "800 900",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": ["file:./assets/fonts/klima/klima-bold-italic-web.woff2"]
+						}
+					]
+				}
+			]
 		}
 	}
 }

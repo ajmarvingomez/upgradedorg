@@ -1,11 +1,11 @@
 /* About Page CSS: */
 
 .about-wrapper {
-//	max-width: 800px;
-//	margin: 0 auto;
-//	padding: 0 8.33%;
+	//	max-width: 800px;
+	//	margin: 0 auto;
+	//	padding: 0 8.33%;
 	padding-top: 90px;
-	font-family: "Montserrat", sans-serif;
+	font-family: var(--wp--preset--font-family--primary);
 }
 
 .about-title-wrapper {
@@ -19,8 +19,9 @@
 	padding: 0 8.33%;
 	margin-bottom: .75em;
 	padding: .25em 0;
-	font-family: "Raleway", sans-serif;
+	font-family: var(--wp--preset--font-family--primary);
 	font-size: 3rem;
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -30,10 +31,11 @@
 		height: 6px;
 		width: 100%;
 		background-color: $dsared;
-		background-image: linear-gradient(to bottom right, rgba(255,0,0,.1), rgba(255,0,0,.3)), url('http://dsarichmond.org/wp-content/uploads/2021/10/red-splatter.jpg');
+		background-image: linear-gradient(to bottom right, rgba(255, 0, 0, .1), rgba(255, 0, 0, .3)), url('http://dsarichmond.org/wp-content/uploads/2021/10/red-splatter.jpg');
 		background-size: cover;
 		background-position: bottom left;
 	}
+
 	@media screen and (max-width: 800px) {
 		font-size: 2.5rem;
 	}

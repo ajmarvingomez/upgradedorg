@@ -941,7 +941,7 @@ textarea {
 /* ************************** KATHERINE'S STYLES BELOW *************************/
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
 }
 body p {
   line-height: 1.5;
@@ -1164,7 +1164,7 @@ li.nav-list__link:last-of-type a {
 }
 
 .archive-header__title {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: 900;
   font-size: 2.5rem;
   border-bottom: 2px solid #EC1F27;
@@ -1236,7 +1236,7 @@ a {
   padding: 0 8.33%;
   margin-bottom: 0.75em;
   padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 3rem;
 }
 .page__title::before {
@@ -1349,7 +1349,7 @@ a {
 }
 
 .single__title {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: 900;
   font-size: 2.75rem;
   margin: 0.25em 0;
@@ -1390,7 +1390,7 @@ a {
 .blog-content-wrapper > p:first-of-type::first-letter {
   float: left;
   padding-right: 6px;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 4.5rem;
   font-weight: 900;
   line-height: 0.875;
@@ -1422,7 +1422,7 @@ a {
 .single__content h4,
 .single__content h5,
 .single__content h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: 900;
   line-height: 1;
   padding-bottom: 0.25em;
@@ -1520,7 +1520,7 @@ a {
   margin: 0;
   margin-bottom: 0.75em;
   padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 2.5rem;
 }
 .sm__title::before {
@@ -1592,7 +1592,7 @@ ul.sm__row {
 
 .newsletter__title {
   padding-bottom: 2px;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   border-bottom: 1px solid #EC1F27;
   color: black;
 }
@@ -1677,7 +1677,7 @@ span.asterisk {
 }
 
 .four-content h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: 900;
   line-height: 1;
   padding-bottom: 0.25em;
@@ -1694,7 +1694,7 @@ span.asterisk {
   line-height: 34px;
 }
 .four__search .search-submit {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: 700;
   color: white;
   background-color: #EC1F27;
@@ -1734,7 +1734,7 @@ span.asterisk {
 /* About Page CSS: */
 .about-wrapper {
   padding-top: 90px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
 }
 
 .about-title-wrapper {
@@ -1748,7 +1748,7 @@ span.asterisk {
   padding: 0 8.33%;
   margin-bottom: 0.75em;
   padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 3rem;
 }
 .about__title::before {
@@ -1799,7 +1799,7 @@ span.asterisk {
   padding: 0 8.33%;
   margin-bottom: 0.75em;
   padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 3rem;
 }
 .blog__title::before {
@@ -1860,7 +1860,7 @@ span.asterisk {
 }
 
 .blog-entry__title {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: 900;
   font-size: 2.25rem;
   margin: 0.25em 0;
@@ -1910,7 +1910,7 @@ span.asterisk {
 .blog-entry__cta {
   display: inline-block;
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: bold;
   background-color: #EC1F27;
   border-radius: 5px;
@@ -1948,7 +1948,7 @@ span.asterisk {
   padding: 0 8.33%;
   margin-bottom: 0.75em;
   padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 3rem;
 }
 .contact__title::before {
@@ -2129,7 +2129,7 @@ span.asterisk {
 
 .home-landing__subtitle {
   grid-area: subtitle;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: 100;
   font-size: 2.5rem;
   font-style: italic;
@@ -2149,7 +2149,7 @@ span.asterisk {
 
 .homepage-about__text-wrapper {
   position: relative;
-
+  display: grid;
   padding: 0 8.33%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "t t t i i" "t t t . .";
@@ -2166,7 +2166,7 @@ span.asterisk {
   margin: 0;
   margin-bottom: 0.75em;
   padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 2.5rem;
 }
 .homepage-about__title::before {
@@ -2178,22 +2178,25 @@ span.asterisk {
   height: 6px;
   width: 100%;
   background-color: #EC1F27;
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.org/wp-content/uploads/2021/10/red-splatter.jpg");
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
   background-size: cover;
   background-position: bottom left;
 }
 
 .homepage-about__text {
   position: relative;
+  grid-area: t;
 }
 
 .homepage-about__involved {
   position: relative;
-
+  grid-area: i;
+  margin-left: 4.167vw;
   padding: 1em;
   background-color: white;
   border: 2px solid black;
   box-shadow: 4px 4px 0 black;
+  margin-top: 3.5rem;
 }
 @media screen and (max-width: 900px) {
   .homepage-about__involved {
@@ -2207,7 +2210,7 @@ span.asterisk {
   margin: 0;
   padding: 0.25em 0;
   padding-top: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 2.5rem;
 }
 
@@ -2224,7 +2227,7 @@ span.asterisk {
 .homepage-involved__list-item {
   position: relative;
   margin: 0.5em;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -2256,7 +2259,7 @@ span.asterisk {
   margin: 0;
   margin-bottom: 0.75em;
   padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 2.5rem;
 }
 .homepage-resources__title::before {
@@ -2268,7 +2271,7 @@ span.asterisk {
   height: 6px;
   width: 100%;
   background-color: #EC1F27;
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.org/wp-content/uploads/2021/10/red-splatter.jpg");
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.3)), url("http://dsarichmond.local/wp-content/uploads/2021/09/red-splatter.jpg");
   background-size: cover;
   background-position: bottom left;
 }
@@ -2310,7 +2313,7 @@ span.asterisk {
   font-weight: 700;
 }
 .homepage-resources__link--1 a {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 1.5rem;
   color: #EC1F27;
   transition: border 0.3s;
@@ -2358,7 +2361,7 @@ span.asterisk {
   margin-right: 8.33%;
   margin-bottom: 0.75em;
   padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 3rem;
 }
 .join__title::before {
@@ -2444,7 +2447,7 @@ p input[type=submit]:hover, p input[type=submit]:focus {
   margin: 0;
   margin-bottom: 0.75em;
   padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 3rem;
 }
 .projects__title::before {
@@ -2472,7 +2475,7 @@ p input[type=submit]:hover, p input[type=submit]:focus {
   margin-bottom: 0.75em;
   margin: 0 8.33%;
   padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 3rem;
 }
 .projects-init__title::before {
@@ -2521,7 +2524,7 @@ p input[type=submit]:hover, p input[type=submit]:focus {
 
 .projects-item__title {
   padding-bottom: 0.25em;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   border-bottom: 1px solid black;
 }
 .projects-item__title a {
@@ -2534,7 +2537,7 @@ p input[type=submit]:hover, p input[type=submit]:focus {
 }
 
 .projects-item__subtitle {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: 300;
   font-style: italic;
   color: gray;
@@ -2543,7 +2546,7 @@ p input[type=submit]:hover, p input[type=submit]:focus {
 .projects-item__cta {
   display: inline-block;
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   background-color: #EC1F27;
   border-radius: 5px;
   transition: background-color 0.3s;
@@ -2569,7 +2572,7 @@ p input[type=submit]:hover, p input[type=submit]:focus {
   margin: 0;
   margin-bottom: 0.75em;
   padding: 0.25em 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 3rem;
 }
 .resources__title::before {
@@ -2634,7 +2637,7 @@ p input[type=submit]:hover, p input[type=submit]:focus {
   font-weight: 700;
 }
 .resources__link--1 a {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-size: 1.5rem;
   color: #EC1F27;
   transition: border 0.3s;

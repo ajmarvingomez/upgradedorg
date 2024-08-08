@@ -15,8 +15,9 @@
 	padding: 0 8.33%;
 	margin-bottom: .75em;
 	padding: .25em 0;
-	font-family: "Raleway", sans-serif;
+	font-family: var(--wp--preset--font-family--primary);
 	font-size: 3rem;
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -30,6 +31,7 @@
 		background-size: cover;
 		background-position: bottom left;
 	}
+
 	@media screen and (max-width: 800px) {
 		font-size: 2.5rem;
 	}
@@ -39,10 +41,11 @@
 	position: relative;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-areas: 'text form''sm sm';
+	grid-template-areas: 'text form' 'sm sm';
+
 	@media screen and (max-width: 768px) {
-			grid-template-columns: 1fr;
-			grid-template-areas: 'text''form''sm';
+		grid-template-columns: 1fr;
+		grid-template-areas: 'text' 'form' 'sm';
 	}
 }
 
@@ -53,6 +56,7 @@
 .contact-content__form {
 	grid-area: form;
 	padding-left: 2rem;
+
 	p {
 		input {
 			width: 100%;
@@ -62,6 +66,7 @@
 			border-radius: 10px;
 			outline-width: 0px;
 		}
+
 		input[type="submit"] {
 			box-sizing: border-box;
 			font-weight: 700;
@@ -70,21 +75,25 @@
 			border: 0px solid black !important;
 			cursor: pointer;
 			transition: background-color .3s, border .3s;
+
 			&:hover {
 				border: 2px solid black !important;
-				box-shadow: 2px 2px 4px rgb(0,0,0,.7);
+				box-shadow: 2px 2px 4px rgb(0, 0, 0, .7);
 			}
+
 			&:focus {
 				border: 2px solid black !important;
-				box-shadow: 2px 2px 4px rgb(0,0,0,.7);
+				box-shadow: 2px 2px 4px rgb(0, 0, 0, .7);
 			}
 		}
 	}
+
 	div[role="form"] {
 		p {
 			margin: .625rem 0;
 		}
 	}
+
 	@media screen and (max-width: 768px) {
 		padding-left: 0;
 	}

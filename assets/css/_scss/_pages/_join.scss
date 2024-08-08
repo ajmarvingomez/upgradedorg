@@ -23,8 +23,9 @@
 	margin-right: 8.33%;
 	margin-bottom: .75em;
 	padding: .25em 0;
-	font-family: "Raleway", sans-serif;
+	font-family: var(--wp--preset--font-family--primary);
 	font-size: 3rem;
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -49,11 +50,14 @@
 	width: 100%;
 	max-width: 800px;
 	margin: 2em auto;
+
 	div[role="form"] {
 		position: relative;
 		padding-top: 1rem;
+
 		p {
 			margin: .75rem;
+
 			input {
 				width: 100%;
 				padding-left: 8px;
@@ -64,6 +68,7 @@
 			}
 		}
 	}
+
 	p {
 		input[type="submit"] {
 			font-weight: 700;
@@ -86,9 +91,11 @@ textarea[name="your-message"] {
 
 p {
 	input[type="submit"] {
-		&:hover, &:focus {
+
+		&:hover,
+		&:focus {
 			border: 2px solid black !important;
-			box-shadow: 2px 2px 4px rgb(0,0,0,.7);
+			box-shadow: 2px 2px 4px rgb(0, 0, 0, .7);
 		}
 	}
 }
@@ -96,7 +103,7 @@ p {
 @media screen and (max-width: 1000px) {
 	.join-wrapper {
 		grid-template-columns: 1fr;
-		grid-template-areas: 'text''form';
+		grid-template-areas: 'text' 'form';
 	}
 }
 
