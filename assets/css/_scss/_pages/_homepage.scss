@@ -138,7 +138,7 @@
 
 .homepage-about__text-wrapper {
 	position: relative;
-	display: grid;
+	// display: grid;
 	//width: calc(100%;
 	padding: 0 8.33%;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -183,17 +183,17 @@
 .homepage-about__involved {
 	position: relative;
 	grid-area: i;
-	margin-left: 4.167vw;
+	// margin-left: 4.167vw;
 	padding: 1em;
 	background-color: white;
 	border: 2px solid black;
 	box-shadow: 4px 4px 0 black;
-	margin-top: 3.5rem;
+	// margin-top: 3.5rem;
+	margin-block: 3rem;
 
 	@media screen and (max-width: 900px) {
 		margin-left: 0;
-		margin-bottom: 3rem;
-		margin-top: 3rem;
+
 	}
 }
 

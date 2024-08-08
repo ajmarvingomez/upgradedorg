@@ -39,8 +39,10 @@ get_header();
 					easy! Just sign up with the national Democratic Socialists of America organization or donate to help
 					us fund the transition to socialism.</p>
 				<ul class="homepage-involved__list">
-					<li class="homepage-involved__list-item"><a href="#">&raquo; Join Richmond DSA</a></li>
-					<li class="homepage-involved__list-item"><a href="#">&raquo; Donate Now</a></li>
+					<li class="homepage-involved__list-item"><a href="https://dsausa.org/join">&raquo; Join Richmond
+							DSA</a></li>
+					<li class="homepage-involved__list-item"><a href="https://www.patreon.com/dsarichmond">&raquo;
+							Donate Now</a></li>
 				</ul>
 				<!--img class="homepage-involved__logo" src="assets/img/red-black-hands.svg" alt="DSA logo"-->
 			</article>
