@@ -43,7 +43,7 @@
 						src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/logo_dsa-richmond.svg'; ?>"
 						alt="Richmond DSA logos"></a>
 			</div>
-			<div class="nav-hamburger-icon">
+			<div class="nav-hamburger-icon" style="display: none;">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/hamburger-icon.svg"
 					alt="hamburger icon">
 			</div>

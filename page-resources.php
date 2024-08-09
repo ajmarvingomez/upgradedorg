@@ -12,7 +12,7 @@
 	<main class="resources__content">
 		<ul class="resources__item-list">
 			<?php
-			$p = new WP_Query( array( 'post_type' => 'resources' ) );
+			$p = new WP_Query( array( 'post_type' => 'resource' ) );
 			if ( $p->have_posts() ) {
 				while ( $p->have_posts() ) {
 					$p->the_post(); ?>
@@ -21,7 +21,7 @@
 						<div class="resources__link--1"><a href="<?php echo get_post_permalink(); ?>"><?php the_title(); ?></a>
 						</div>
 						<p><?php the_excerpt(); ?></p>
-						<div class="resources__link--2"><a href="<?php echo get_post_permalink(); ?>">Read
+						<div class="resources__link--2"><a href="<?php echo get_post_permalink(); ?>">
 								<?php the_title() ?></a></div>
 					</li><?php
 				}
