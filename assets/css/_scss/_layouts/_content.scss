@@ -1,17 +1,14 @@
 /* Content Layout: */
 
-.entry-wrapper {
+.entry-wrapper {}
 
-}
-
-.entry-header {
-
-}
+.entry-header {}
 
 .entry-header__title {
 	//border-bottom: 1px solid black;
 	//font-family: "Raleway", sans-serif;
 	font-weight: 900;
+
 	a {
 		color: black;
 		text-decoration: none;
@@ -21,6 +18,7 @@
 .entry-meta {
 	font-family: "Inconsolata", monospace;
 	color: darkgray;
+
 	a {
 		color: darkgray !important;
 		border-bottom: 1px solid darkgray !important;
@@ -33,7 +31,9 @@
 		text-decoration: none;
 		border-bottom: 2px solid $dsared;
 		transition: background-color .3s;
-		&:hover, &:focus {
+
+		&:hover,
+		&:focus {
 			background-color: $dsared;
 		}
 	}

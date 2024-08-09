@@ -13,11 +13,11 @@
 	</div>
 	<section class="join__form">
 
-		<?php echo do_shortcode('[contact-form-7 id="528" title="Get Involved Form"]'); ?>
+		<?php echo do_shortcode( '[contact-form-7 id="528" title="Get Involved Form"]' ); ?>
 
 	</section>
 </main>
 
-<?php get_template_part('template-parts/newsletter'); ?>
+<?php get_template_part( 'template-parts/newsletter' ); ?>
 
 <?php get_footer(); ?>

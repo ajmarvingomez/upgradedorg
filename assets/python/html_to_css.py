@@ -28,7 +28,7 @@ def classesToCSS(class_names):
 # NB: throws error if quoted, e.g. "r'<pattern>'"
 #
 # '.*?' = 'non-greedy', which is regex language
-# for "starts looking for a match at the beginning of the string, 
+# for "starts looking for a match at the beginning of the string,
 # rather than the end" (aka not trying to get the longest string possible)
 pattern = r'class=".*?"'
 

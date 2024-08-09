@@ -11,22 +11,24 @@
 
 ?>
 
-	<?php wp_footer() ?>
-	<footer class="footer-wrapper">
-		<div class="footer-border">
+<?php wp_footer() ?>
+<footer class="footer-wrapper">
+	<div class="footer-border">
 
-			<div class="footer__logo"><img alt="red and white DSA hands logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/dsa-logo-red-white.svg"></div>
+		<div class="footer__logo"><img alt="red and white DSA hands logo"
+				src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/dsa-logo-red-white.svg"></div>
 
-			<ul class="footer__link-list">
-			  <li class="footer-list__link"><a href="<?php echo get_site_url() . '/about' ?>">About</a></li>
-			  <li class="footer-list__link"><a href="<?php echo get_site_url() . '/initiatives' ?>">Initiatives</a></li>
-			  <li class="footer-list__link"><a href="<?php echo get_site_url() . '/blog' ?>">Blog</a></li>
-			  <li class="footer-list__link"><a href="<?php echo get_site_url() . '/resource-page' ?>">Resources</a></li>
-			  <li class="footer-list__link"><a href="<?php echo get_site_url() . '/contact' ?>">Contact</a></li>
-			  <li class="footer-list__link"><a href="https://www.patreon.com/dsarichmond">Donate</a></li>
-			  <li class="footer-list__link"><a href="<?php echo get_site_url() . '/get-involved' ?>">Get Involved</a></li>
-			</ul>
-		</div>
-	</footer>
+		<ul class="footer__link-list">
+			<li class="footer-list__link"><a href="<?php echo get_site_url() . '/about' ?>">About</a></li>
+			<li class="footer-list__link"><a href="<?php echo get_site_url() . '/initiatives' ?>">Initiatives</a></li>
+			<li class="footer-list__link"><a href="<?php echo get_site_url() . '/blog' ?>">Blog</a></li>
+			<li class="footer-list__link"><a href="<?php echo get_site_url() . '/resource-page' ?>">Resources</a></li>
+			<li class="footer-list__link"><a href="<?php echo get_site_url() . '/contact' ?>">Contact</a></li>
+			<li class="footer-list__link"><a href="https://www.patreon.com/dsarichmond">Donate</a></li>
+			<li class="footer-list__link"><a href="<?php echo get_site_url() . '/get-involved' ?>">Get Involved</a></li>
+		</ul>
+	</div>
+</footer>
 </body>
+
 </html>

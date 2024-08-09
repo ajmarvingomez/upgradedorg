@@ -8,6 +8,7 @@
 	align-items: center;
 	padding: 3rem 0;
 	background-color: black;
+
 	a {
 		color: white;
 	}
@@ -27,8 +28,9 @@
 
 .footer__logo {
 	position: relative;
+
 	img {
-	//	position: inline-block;
+		//	position: inline-block;
 		height: 72px;
 	}
 }
@@ -46,15 +48,18 @@
 	font-weight: bold;
 	line-height: 2;
 	white-space: nowrap;
+
 	a {
 		text-decoration: none;
 		color: white;
 		border-bottom: 1px solid white;
 		transition: color .3s, border-bottom .3s;
+
 		&:hover {
 			color: $dsared;
 			border-bottom: 1px solid $dsared;
 		}
+
 		&:focus {
 			color: $dsared;
 			border-bottom: 1px solid $dsared;
@@ -66,6 +71,7 @@
 	.footer-wrapper {
 		flex-flow: column nowrap;
 	}
+
 	.footer-border {
 		flex-flow: column nowrap;
 	}

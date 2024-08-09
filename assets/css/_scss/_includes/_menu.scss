@@ -20,6 +20,7 @@
 
 .nav-content__img-wrapper {
 	position: relative;
+
 	a {
 		img {
 			height: 60px;
@@ -28,10 +29,12 @@
 }
 
 .nav-hamburger-icon {
-//	display: none;
+
+	//	display: none;
 	img {
 		height: 36px;
 	}
+
 	@media screen and (max-width: 1000px) {
 		display: flex;
 		align-items: center;
@@ -41,9 +44,11 @@
 
 .nav-close-icon {
 	z-index: 10;
+
 	img {
 		height: 30px;
 	}
+
 	@media screen and (max-width: 1000px) {
 		display: flex;
 		align-items: center;
@@ -57,6 +62,7 @@ ul.nav-content__link-list {
 	list-style-type: none;
 	margin: 0;
 	padding-left: 0;
+
 	@media screen and (max-width: 1000px) {
 		position: absolute;
 		top: 0;
@@ -67,6 +73,7 @@ ul.nav-content__link-list {
 		width: 100%;
 		display: none;
 		border: 1px solid white;
+
 		li {
 			display: flex;
 			justify-content: center;
@@ -76,12 +83,14 @@ ul.nav-content__link-list {
 			font-size: 18px;
 			border: 1px solid white;
 			background-color: black;
+
 			&:last-of-type {
 				background-color: red;
+
 				a {
 					color: white;
 					background-color: none;
-				}	
+				}
 			}
 		}
 	}
@@ -98,35 +107,42 @@ ul.nav-content__link-list {
 li.nav-list__link {
 	line-height: 2;
 	padding: 0 .5rem;
+
 	a {
 		font-weight: bold;
 		text-decoration: none;
-		white-space: nowrap;;
+		white-space: nowrap;
+		;
 		color: $dsared;
 		transition: color .3s, border-bottom .3s;
-		&:hover, &:focus {
+
+		&:hover,
+		&:focus {
 			color: white;
 			border-bottom: 2px solid white;
 		}
 	}
+
 	// 'Get Involved'
 	&:last-of-type {
 		a {
 			padding: .5rem;
 			border-radius: 5px;
 			color: white;
-			background-color: red;	
-		}	
+			background-color: red;
+		}
 	}
+
 	@media screen and (max-width: 1000px) {
 		&:last-of-type {
 			background-color: red;
+
 			a {
 				padding: initial;
 				border-radius: 0px;
 				color: white;
 				background-color: none;
-			}	
+			}
 		}
 	}
 }

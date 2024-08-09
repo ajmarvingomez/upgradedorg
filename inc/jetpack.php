@@ -20,8 +20,8 @@ function dsarichmond_jetpack_setup() {
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'dsarichmond_infinite_scroll_render',
-			'footer'    => 'page',
+			'render' => 'dsarichmond_infinite_scroll_render',
+			'footer' => 'page',
 		)
 	);
 
@@ -34,16 +34,16 @@ function dsarichmond_jetpack_setup() {
 		array(
 			'post-details' => array(
 				'stylesheet' => 'dsarichmond-style',
-				'date'       => '.posted-on',
+				'date' => '.posted-on',
 				'categories' => '.cat-links',
-				'tags'       => '.tags-links',
-				'author'     => '.byline',
-				'comment'    => '.comments-link',
+				'tags' => '.tags-links',
+				'author' => '.byline',
+				'comment' => '.comments-link',
 			),
 			'featured-images' => array(
 				'archive' => true,
-				'post'    => true,
-				'page'    => true,
+				'post' => true,
+				'page' => true,
 			),
 		)
 	);

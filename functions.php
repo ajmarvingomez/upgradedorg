@@ -94,9 +94,9 @@ if ( ! function_exists( 'dsarichmond_setup' ) ) :
 		add_theme_support(
 			'custom-logo',
 			array(
-				'height'      => 250,
-				'width'       => 250,
-				'flex-width'  => true,
+				'height' => 250,
+				'width' => 250,
+				'flex-width' => true,
 				'flex-height' => true,
 			)
 		);
@@ -124,13 +124,13 @@ add_action( 'after_setup_theme', 'dsarichmond_content_width', 0 );
 function dsarichmond_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'dsarichmond' ),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'dsarichmond' ),
+			'name' => esc_html__( 'Sidebar', 'dsarichmond' ),
+			'id' => 'sidebar-1',
+			'description' => esc_html__( 'Add widgets here.', 'dsarichmond' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'after_widget' => '</section>',
+			'before_title' => '<h2 class="widget-title">',
+			'after_title' => '</h2>',
 		)
 	);
 }
@@ -186,4 +186,4 @@ wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js', 
 add_post_type_support( 'page', 'excerpt' );
 add_post_type_support( 'initiatives', 'excerpt' );
 add_post_type_support( 'resources', 'excerpt' );
-add_post_type_support('page', 'custom-fields');
+add_post_type_support( 'page', 'custom-fields' );
