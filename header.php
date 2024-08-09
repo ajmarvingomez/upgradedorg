@@ -33,21 +33,27 @@
 <?php wp_body_open(); ?>
 	<nav class="nav-wrapper">
 		<div class="nav-content-wrapper">
-	 		<div class="nav-content__img-wrapper">
-	      		<a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/logo_dsa-richmond.svg'; ?>" alt="Richmond DSA logos"></a>
-	    	</div>
-	    <div class="nav-hamburger-icon">
-	    	<img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/hamburger-icon.svg'?>" alt="hamburger icon">
-	    </div>
-	    <div class="nav-close-icon nav-content--hide"><img src="<?php echo get_site_url() . '/wp-content/uploads/2021/09/x.svg' ?>" alt="hamburger icon"></div>
-	    <ul class="nav-content__link-list">
-	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/about' ?>">About</a></li>
-	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/initiatives' ?>">Initiatives</a></li>
-	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/blog' ?>">Blog</a></li>
-	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/resources' ?>">Resources</a></li>
-	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/contact' ?>">Contact</a></li>
-	      <li class="nav-list__link"><a href="https://www.patreon.com/dsarichmond">Donate</a></li>
-	      <li class="nav-list__link"><a href="<?php echo get_site_url() . '/get-involved' ?>">Get Involved</a></li>
-	    </ul>
-	  </div>
+			<div class="nav-content__img-wrapper">
+				<a href="<?php echo get_site_url(); ?>"><img
+						src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/logo_dsa-richmond.svg'; ?>"
+						alt="Richmond DSA logos"></a>
+			</div>
+			<div class="nav-hamburger-icon">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/hamburger-icon.svg"
+					alt="hamburger icon">
+			</div>
+			<div class="nav-close-icon nav-content--hide"><img
+					src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/x.svg' ?>" alt="hamburger icon">
+			</div>
+			<ul class="nav-content__link-list">
+				<li class="nav-list__link"><a href="<?php echo get_site_url() . '/about' ?>">About</a></li>
+				<li class="nav-list__link"><a href="<?php echo get_site_url() . '/initiatives' ?>">Initiatives</a></li>
+				<li class="nav-list__link"><a href="<?php echo get_site_url() . '/blog' ?>">Blog</a></li>
+				<li class="nav-list__link"><a href="<?php echo get_site_url() . '/resources' ?>">Resources</a></li>
+				<li class="nav-list__link"><a href="<?php echo get_site_url() . '/contact' ?>">Contact</a></li>
+				<li class="nav-list__link"><a href="https://www.patreon.com/dsarichmond">Donate</a></li>
+				<li class="nav-list__link"><a href="<?php echo get_site_url() . '/get-involved' ?>">Get Involved</a>
+				</li>
+			</ul>
+		</div>
 	</nav>

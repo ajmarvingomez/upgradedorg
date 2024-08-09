@@ -180,7 +180,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 /******* NEW CODE: ************/
 
-wp_enqueue_script('main', get_template_directory() . '/assets/js/main.js');
+wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js', [], false, [ 'strategy' => 'defer', 'in_footer' => true ] );
 
 // Adding excerpt for page
 add_post_type_support( 'page', 'excerpt' );
