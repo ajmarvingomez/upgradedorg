@@ -16,7 +16,7 @@
 <footer class="footer-wrapper">
 	<div class="footer-border">
 
-		<div class="footer__logo"><img alt="red and white DSA hands logo"
+		<div class="footer__logo"><img height="72" width="59" alt="red and white DSA hands logo"
 				src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/dsa-logo-red-white.svg"')); ?>"></div>
 
 		<ul class=" footer__link-list">

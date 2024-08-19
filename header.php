@@ -43,15 +43,16 @@
 	<nav class="nav-wrapper">
 		<div class="nav-content-wrapper">
 			<div class="nav-content__img-wrapper">
-				<a href="<?php echo get_site_url(); ?>"><img
+				<a href="<?php echo get_site_url(); ?>"><img width="242" height="60"
 						src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/logo_dsa-richmond.svg')); ?>"
 						alt="Richmond DSA logos"></a>
 			</div>
 			<div class="nav-hamburger-icon" style="display: none;">
-				<img src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/hamburger-icon.svg')); ?>"
+				<img width="36" height="36" src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/hamburger-icon.svg')); ?>"
 					alt="hamburger icon">
 			</div>
-			<div class="nav-close-icon nav-content--hide"><img
+			<div class="nav-close-icon nav-content--hide"><img width="30"
+					height="30"
 					src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/x.svg')); ?>" alt="hamburger icon">
 			</div>
 			<ul class="nav-content__link-list">

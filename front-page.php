@@ -23,9 +23,9 @@ get_header();
 				<h1 class="home-landing__title text">DSA<br />Richmond</h1>
 			</div>
 			<div class="home-landing__rose">
-				<img src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/rose-vector.svg')); ?>" alt="rose">
-				<img src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/rose-vector.svg')); ?>" alt="rose">
-				<img src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/rose-vector.svg')); ?>" alt="rose">
+				<img src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/rose-vector.svg')); ?>" width="125" height="100" alt="rose">
+				<img src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/rose-vector.svg')); ?>" width="125" height="100" alt="rose">
+				<img src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/rose-vector.svg')); ?>" width="125" height="100" alt="rose">
 			</div>
 			<div class="home-landing__line"></div>
 			<h2 class="home-landing__subtitle">Southerners for Solidarity</h2>
