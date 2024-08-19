@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 var css_compile = (done) => {
 	gulp.src('assets/css/style.scss')
 		.pipe(sass({
-			outputStyle: 'expanded'
+			outputStyle: 'compressed'
 		}).on('error', sass.logError))
 		.pipe(gulp.dest('./'));
 	done();
