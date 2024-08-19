@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -22,9 +23,9 @@ get_header();
 				<h1 class="home-landing__title text">DSA<br />Richmond</h1>
 			</div>
 			<div class="home-landing__rose">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/rose-vector.svg" alt="rose">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/rose-vector.svg" alt="rose">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/rose-vector.svg" alt="rose">
+				<img src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/rose-vector.svg')); ?>" alt="rose">
+				<img src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/rose-vector.svg')); ?>" alt="rose">
+				<img src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/rose-vector.svg')); ?>" alt="rose">
 			</div>
 			<div class="home-landing__line"></div>
 			<h2 class="home-landing__subtitle">Southerners for Solidarity</h2>
@@ -44,14 +45,14 @@ get_header();
 					<li class="homepage-involved__list-item"><a href="https://www.patreon.com/dsarichmond">&raquo;
 							Donate Now</a></li>
 				</ul>
-				<!--img class="homepage-involved__logo" src="assets/img/red-black-hands.svg" alt="DSA logo"-->
+				<!--img class="homepage-involved__logo" src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/red-black-hands.svg')); ?>" alt="DSA logo"-->
 			</article>
 		</div>
 	</section>
 
 </main>
 
-<?php get_template_part( 'template-parts/newsletter' ); ?>
+<?php get_template_part('template-parts/newsletter'); ?>
 
 <?php
 get_footer();

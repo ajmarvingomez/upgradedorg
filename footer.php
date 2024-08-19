@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -16,9 +17,9 @@
 	<div class="footer-border">
 
 		<div class="footer__logo"><img alt="red and white DSA hands logo"
-				src="<?php echo get_template_directory_uri(); ?>/assets/img/svg/dsa-logo-red-white.svg"></div>
+				src="<?php echo esc_url(get_parent_theme_file_uri('assets/img/svg/dsa-logo-red-white.svg"')); ?>"></div>
 
-		<ul class="footer__link-list">
+		<ul class=" footer__link-list">
 			<li class="footer-list__link"><a href="<?php echo get_site_url() . '/about' ?>">About</a></li>
 			<li class="footer-list__link"><a href="<?php echo get_site_url() . '/initiatives' ?>">Initiatives</a></li>
 			<li class="footer-list__link"><a href="<?php echo get_site_url() . '/blog' ?>">Blog</a></li>
