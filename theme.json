@@ -56,6 +56,7 @@
 							"fontWeight": "300 500",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
+							"fontDisplay": "swap",
 							"src": ["file:./assets/fonts/manifold/ManifoldDSA-Medium.woff2"]
 						},
 						{
@@ -63,6 +64,7 @@
 							"fontWeight": "300 500",
 							"fontStyle": "italic",
 							"fontStretch": "normal",
+							"fontDisplay": "swap",
 							"src": [
 								"file:./assets/fonts/manifold/ManifoldDSA-MediumItalic.woff2"
 							]
@@ -72,6 +74,7 @@
 							"fontWeight": "600 700",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
+							"fontDisplay": "swap",
 							"src": ["file:./assets/fonts/manifold/ManifoldDSA-DemiBold.woff2"]
 						},
 						{
@@ -79,6 +82,7 @@
 							"fontWeight": "600 700",
 							"fontStyle": "italic",
 							"fontStretch": "normal",
+							"fontDisplay": "swap",
 							"src": [
 								"file:./assets/fonts/manifold/ManifoldDSA-DemiBoldItalic.woff2"
 							]
@@ -88,6 +92,7 @@
 							"fontWeight": "800 900",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
+							"fontDisplay": "swap",
 							"src": ["file:./assets/fonts/manifold/ManifoldDSA-Bold.woff2"]
 						},
 						{
@@ -95,6 +100,7 @@
 							"fontWeight": "800 900",
 							"fontStyle": "italic",
 							"fontStretch": "normal",
+							"fontDisplay": "swap",
 							"src": [
 								"file:./assets/fonts/manifold/ManifoldDSA-BoldItalic.woff2"
 							]
@@ -111,6 +117,7 @@
 							"fontWeight": "300 500",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
+							"fontDisplay": "swap",
 							"src": ["file:./assets/fonts/klima/klima-regular-web.woff2"]
 						},
 						{
@@ -118,6 +125,7 @@
 							"fontWeight": "300 500",
 							"fontStyle": "italic",
 							"fontStretch": "normal",
+							"fontDisplay": "swap",
 							"src": [
 								"file:./assets/fonts/klima/klima-regular-italic-web.woff2"
 							]
@@ -127,6 +135,7 @@
 							"fontWeight": "600 700",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
+							"fontDisplay": "swap",
 							"src": ["file:./assets/fonts/klima/klima-medium-web.woff2"]
 						},
 						{
@@ -134,6 +143,7 @@
 							"fontWeight": "600 700",
 							"fontStyle": "italic",
 							"fontStretch": "normal",
+							"fontDisplay": "swap",
 							"src": ["file:./assets/fonts/klima/klima-medium-italic-web.woff2"]
 						},
 						{
@@ -141,6 +151,7 @@
 							"fontWeight": "800 900",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
+							"fontDisplay": "swap",
 							"src": ["file:./assets/fonts/klima/klima-bold-web.woff2"]
 						},
 						{
@@ -148,6 +159,7 @@
 							"fontWeight": "800 900",
 							"fontStyle": "italic",
 							"fontStretch": "normal",
+							"fontDisplay": "swap",
 							"src": ["file:./assets/fonts/klima/klima-bold-italic-web.woff2"]
 						}
 					]
