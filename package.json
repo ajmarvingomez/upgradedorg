@@ -1,6 +1,6 @@
 {
 	"name": "dsarichmond",
-	"version": "2.0.0",
+	"version": "2.2.0",
 	"description": "Wordpress theme for Democratic Socialists of Richmond website",
 	"main": "gulpfile.js",
 	"scripts": {
@@ -28,7 +28,9 @@
 	"devDependencies": {
 		"gulp": "^5.0.0",
 		"gulp-sass": "^5.0.0",
-		"prettier": "@wordpress/prettier-config",
 		"sass": "^1.42.1"
+	},
+	"dependencies": {
+		"@wordpress/prettier-config": "^4.5.0"
 	}
 }

@@ -1,6 +1,19 @@
 {
 	"version": 2,
 	"settings": {
+		"border": {
+			"customColor": true,
+			"customWidth": true,
+			"customStyle": true
+		},
+		"layout": {
+			"contentSize": "900px",
+			"wideSize": "1100px"
+		},
+		"spacing": {
+			"margin": "true",
+			"padding": "true"
+		},
 		"color": {
 			"background": true,
 			"custom": true,
@@ -9,16 +22,35 @@
 			"defaultDuotone": true,
 			"defaultGradients": true,
 			"defaultPalette": true,
-			"duotone": [],
 			"gradients": [],
 			"link": true,
 			"palette": [
 				{ "color": "#EC1F27", "name": "DSA Red", "slug": "dsa-red" },
-				{ "color": "#F04C53", "name": "DSA Red Tint 1", "slug": "dsa-red-1" },
-				{ "color": "#F4797E", "name": "DSA Red Tint 2", "slug": "dsa-red-2" },
-				{ "color": "#F7A5A9", "name": "DSA Red Tint 3", "slug": "dsa-red-3" },
-				{ "color": "#FBD2D4", "name": "DSA Red Tint 4", "slug": "dsa-red-4" },
-				{ "color": "#231F20", "name": "DSA Black", "slug": "dsa-black" },
+				{
+					"color": "#F04C53",
+					"name": "DSA Red Tint 1",
+					"slug": "dsa-red-1"
+				},
+				{
+					"color": "#F4797E",
+					"name": "DSA Red Tint 2",
+					"slug": "dsa-red-2"
+				},
+				{
+					"color": "#F7A5A9",
+					"name": "DSA Red Tint 3",
+					"slug": "dsa-red-3"
+				},
+				{
+					"color": "#FBD2D4",
+					"name": "DSA Red Tint 4",
+					"slug": "dsa-red-4"
+				},
+				{
+					"color": "#231F20",
+					"name": "DSA Black",
+					"slug": "dsa-black"
+				},
 				{
 					"color": "#3B3838",
 					"name": "DSA Black Tint 1",
@@ -41,6 +73,33 @@
 				},
 				{ "color": "#FFFFFF", "name": "White", "slug": "dsa-white" }
 			],
+			"duotone": [
+				{
+					"colors": ["#EC1F27", "#231F20"],
+					"slug": "dsa-red-black",
+					"name": "DSA Red and Black"
+				},
+				{
+					"colors": ["#F04C53", "#3B3838"],
+					"slug": "dsa-red-black-1",
+					"name": "DSA Red and Black Tint 1"
+				},
+				{
+					"colors": ["#F4797E", "#605C5C"],
+					"slug": "dsa-red-black-2",
+					"name": "DSA Red and Black Tint 2"
+				},
+				{
+					"colors": ["#F7A5A9", "#8C8989"],
+					"slug": "dsa-red-black-3",
+					"name": "DSA Red and Black Tint 3"
+				},
+				{
+					"colors": ["#FBD2D4", "#C1C0BF"],
+					"slug": "dsa-red-black-4",
+					"name": "DSA Red and Black Tint 4"
+				}
+			],
 			"text": true
 		},
 		"typography": {
@@ -57,7 +116,9 @@
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/manifold/ManifoldDSA-Medium.woff2"]
+							"src": [
+								"file:./assets/fonts/manifold/ManifoldDSA-Medium.woff2"
+							]
 						},
 						{
 							"fontFamily": "Manifold",
@@ -75,7 +136,9 @@
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/manifold/ManifoldDSA-DemiBold.woff2"]
+							"src": [
+								"file:./assets/fonts/manifold/ManifoldDSA-DemiBold.woff2"
+							]
 						},
 						{
 							"fontFamily": "Manifold",
@@ -93,7 +156,9 @@
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/manifold/ManifoldDSA-Bold.woff2"]
+							"src": [
+								"file:./assets/fonts/manifold/ManifoldDSA-Bold.woff2"
+							]
 						},
 						{
 							"fontFamily": "Manifold",
@@ -118,7 +183,9 @@
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/klima/klima-regular-web.woff2"]
+							"src": [
+								"file:./assets/fonts/klima/klima-regular-web.woff2"
+							]
 						},
 						{
 							"fontFamily": "Klima",
@@ -136,7 +203,9 @@
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/klima/klima-medium-web.woff2"]
+							"src": [
+								"file:./assets/fonts/klima/klima-medium-web.woff2"
+							]
 						},
 						{
 							"fontFamily": "Klima",
@@ -144,7 +213,9 @@
 							"fontStyle": "italic",
 							"fontStretch": "normal",
 							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/klima/klima-medium-italic-web.woff2"]
+							"src": [
+								"file:./assets/fonts/klima/klima-medium-italic-web.woff2"
+							]
 						},
 						{
 							"fontFamily": "Klima",
@@ -152,7 +223,9 @@
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/klima/klima-bold-web.woff2"]
+							"src": [
+								"file:./assets/fonts/klima/klima-bold-web.woff2"
+							]
 						},
 						{
 							"fontFamily": "Klima",
@@ -160,7 +233,9 @@
 							"fontStyle": "italic",
 							"fontStretch": "normal",
 							"fontDisplay": "swap",
-							"src": ["file:./assets/fonts/klima/klima-bold-italic-web.woff2"]
+							"src": [
+								"file:./assets/fonts/klima/klima-bold-italic-web.woff2"
+							]
 						}
 					]
 				}
