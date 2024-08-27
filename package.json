@@ -1,6 +1,6 @@
 {
 	"name": "dsarichmond",
-	"version": "2.2.0",
+	"version": "3.0.0",
 	"description": "Wordpress theme for Democratic Socialists of Richmond website",
 	"main": "gulpfile.js",
 	"scripts": {

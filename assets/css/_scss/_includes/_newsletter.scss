@@ -32,6 +32,58 @@
 
 }
 
+.wpcf7-form {
+
+
+	p {
+
+		input,
+		textarea {
+			width: 100%;
+			padding-left: 8px;
+			border: 2px solid;
+			border-color: var(--wp--preset--color--dsa-black);
+			line-height: 3;
+			border-radius: 0;
+			outline-width: 0px;
+
+			&:hover,
+			&:focus {
+				border-color: var(--wp--preset--color--dsa-red-1) !important;
+				box-shadow: 2px 2px 4px var(--wp--preset--color--dsa-black-1) !important;
+
+			}
+		}
+
+		input[type="submit"] {
+			box-sizing: border-box;
+			font-weight: 700;
+			background-color: var(--wp--preset--color--dsa-red-1);
+			color: white;
+			border: 2px solid;
+
+			border-color: var(--wp--preset--color--dsa-black) !important;
+			cursor: pointer;
+			transition: background-color .3s;
+			border-radius: 0 !important;
+
+			&:hover,
+			&:focus {
+				border-color: var(--wp--preset--color--dsa-red-1) !important;
+				text-decoration: underline;
+				box-shadow: 2px 2px 4px var(--wp--preset--color--dsa-black-1) !important;
+
+			}
+		}
+	}
+
+	div[role="form"] {
+		p {
+			margin: .625rem 0;
+		}
+	}
+}
+
 #mc_embed_signup {
 	position: relative;
 
@@ -59,7 +111,7 @@
 					line-height: 2;
 					background-color: white; // salmon;
 					border: 2px solid black; //-width: 0px !important;
-					box-shadow: 4px 4px 0 black;
+					box-shadow: 2px 2px 4px var(--wp--preset--color--dsa-black-1);
 				}
 			}
 
@@ -80,7 +132,7 @@
 
 					&:hover,
 					&:focus {
-						box-shadow: 4px 4px 0 black;
+						box-shadow: 2px 2px 4px var(--wp--preset--color--dsa-black-1);
 					}
 				}
 			}

@@ -1,27 +1,36 @@
 {
-	"version": 2,
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"settings": {
+		"custom": {
+			":hover": {
+				"opacity": "0.5"
+			}
+		},
+		"dimensions": {
+			"aspectRatio": true
+		},
 		"border": {
-			"customColor": true,
-			"customWidth": true,
-			"customStyle": true
+			"color": true,
+			"width": true
 		},
 		"layout": {
 			"contentSize": "900px",
 			"wideSize": "1100px"
 		},
 		"spacing": {
-			"margin": "true",
-			"padding": "true"
+			"margin": true,
+			"padding": true,
+			"blockGap": true
 		},
 		"color": {
 			"background": true,
 			"custom": true,
 			"customDuotone": true,
 			"customGradient": true,
-			"defaultDuotone": true,
-			"defaultGradients": true,
-			"defaultPalette": true,
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
 			"gradients": [],
 			"link": true,
 			"palette": [
@@ -103,7 +112,6 @@
 			"text": true
 		},
 		"typography": {
-			"fontFamily": "Manifold, sans-serif",
 			"fontFamilies": [
 				{
 					"name": "Primary (Manifold)",
@@ -240,6 +248,52 @@
 					]
 				}
 			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--primary)"
+		},
+		"elements": {
+			"link": {
+				"css": "&:hover{ color: var(--wp--preset--color--dsa-red-3) !important; }",
+				":hover": {
+					"typography": {
+						"textDecoration": "underline"
+					}
+				},
+				":focus": {
+					"typography": {
+						"textDecoration": "underline"
+					}
+				}
+			},
+			"button": {
+				"border": {
+					"radius": "0px"
+				},
+				"css": "&:hover{ background-color: var(--wp--preset--color--dsa-red-3) !important; \n box-shadow: 2px 2px 4px var(--wp--preset--color--dsa-black-1); }",
+				":hover": {
+					"typography": {
+						"textDecoration": "underline"
+					}
+				},
+				":focus": {
+					"typography": {
+						"textDecoration": "underline"
+					}
+				}
+			}
+		},
+		"blocks": {
+			"core/navigation": {
+				"spacing": {
+					"padding": {
+						"left": "1rem",
+						"right": "1rem"
+					}
+				}
+			}
 		}
 	}
 }
