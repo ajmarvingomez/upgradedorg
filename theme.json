@@ -16,7 +16,8 @@
 		},
 		"layout": {
 			"contentSize": "900px",
-			"wideSize": "1100px"
+			"wideSize": "1100px",
+			"allowCustomContentAndWideSize": false
 		},
 		"spacing": {
 			"margin": true,
@@ -291,6 +292,18 @@
 					"padding": {
 						"left": "1rem",
 						"right": "1rem"
+					}
+				},
+				"elements": {
+					"link": {
+						"spacing": {
+							"padding": {
+								"top": ".5rem",
+								"bottom": ".5rem",
+								"left": ".5rem",
+								"right": ".5rem"
+							}
+						}
 					}
 				}
 			}

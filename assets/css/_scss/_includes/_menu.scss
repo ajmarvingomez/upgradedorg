@@ -9,6 +9,12 @@
 	box-shadow: 0px 4px 2px hsla(0, 0%, 0%, .3);
 }
 
+.has-modal-open .wp-block-navigation__responsive-dialog {
+	.wp-block-navigation__responsive-container-content {
+		width: 100%;
+	}
+}
+
 .nav-content-wrapper {
 	position: relative;
 	display: flex;
