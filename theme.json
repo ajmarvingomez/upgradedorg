@@ -2,6 +2,7 @@
 	"version": 3,
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"settings": {
+		"appearanceTools": true,
 		"custom": {
 			":hover": {
 				"opacity": "0.5"
