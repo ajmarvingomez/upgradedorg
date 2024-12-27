@@ -49,6 +49,15 @@ if (! function_exists('dsarichmond_setup')) :
 		 */
 		add_theme_support('post-thumbnails');
 
+
+		/*
+		* Add responsive Embed Support
+		*
+		*
+		*/
+
+		add_theme_support('responsive-embeds');
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
