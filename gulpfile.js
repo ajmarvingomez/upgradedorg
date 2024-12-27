@@ -6,17 +6,17 @@ var gulp = require('gulp'),
 // SCSS -> CSS
 var css_compile = (done) => {
 	gulp.src('assets/css/style.scss')
-		.pipe(sass({
-			outputStyle: 'compressed'
-		}).on('error', sass.logError))
+		.pipe(
+			sass({
+				outputStyle: 'compressed',
+			}).on('error', sass.logError)
+		)
 		.pipe(gulp.dest('./'));
 	done();
 };
 
-
 // run compiler
 gulp.task('css:compile', css_compile);
-
 
 // watch for changes, then run compiler
 gulp.task('css:watch', () => {

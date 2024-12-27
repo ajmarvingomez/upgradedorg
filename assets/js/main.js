@@ -3,8 +3,8 @@
 let burgerIcon = document.querySelector('.nav-hamburger-icon');
 let xIcon = document.querySelector('.nav-close-icon');
 let menuList = document.querySelector('.nav-content__link-list');
-if( null !== burgerIcon && null !== xIcon && null !== menuList) {
-	window.addEventListener('DOMContentLoaded',() => {
+if (null !== burgerIcon && null !== xIcon && null !== menuList) {
+	window.addEventListener('DOMContentLoaded', () => {
 		let width = window.innerWidth;
 
 		if (width < 1000) {
@@ -22,7 +22,7 @@ if( null !== burgerIcon && null !== xIcon && null !== menuList) {
 			burgerIcon.style.display = 'none';
 			xIcon.style.display = 'none';
 		}
-	})
+	});
 
 	window.addEventListener('resize', () => {
 		let width = window.innerWidth;
