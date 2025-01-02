@@ -1,5 +1,5 @@
 import { registerBlockType } from '@wordpress/blocks';
-import './style.scss';
+import './mailchimp.scss';
 import json from './block.json';
 
 registerBlockType(json, {
@@ -40,33 +40,6 @@ registerBlockType(json, {
 									name="EMAIL"
 									class="required email"
 									id="mce-EMAIL"
-								/>
-							</div>
-							<div
-								id="mce-responses"
-								class="clear"
-								style="width: 0 !important;"
-							>
-								<div
-									class="response"
-									id="mce-error-response"
-									style="display:none"
-								></div>
-								<div
-									class="response"
-									id="mce-success-response"
-									style="display:none"
-								></div>
-							</div>
-							<div
-								style="position: absolute; left: -5000px;"
-								aria-hidden="true"
-							>
-								<input
-									type="text"
-									name="b_85518fb08bcc284befc646aa3_19e4be95d1"
-									tabindex="-1"
-									value=""
 								/>
 							</div>
 							<div class="clear">

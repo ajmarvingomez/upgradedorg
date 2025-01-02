@@ -196,12 +196,7 @@ if (defined('JETPACK__VERSION')) {
 
 /******* NEW CODE: ************/
 
-function register_blocks()
-{
-	register_block_type(get_template_directory() . '/build/custom-blocks/mailchimp');
-}
-
-add_action('init', 'register_blocks');
+register_block_type(__DIR__ . '/build/custom-blocks/mailchimp');
 
 wp_enqueue_script('main', get_parent_theme_file_uri('build/index.js'), [], _S_VERSION, ['strategy' => 'defer', 'in_footer' => true]);
 

@@ -4,11 +4,13 @@
   "name": "dsa-richmond/mailchimp",
   "title": "Mailchimp Block",
   "render": "file:render.php",
+  "editorScript": [
+    "file:index.js"
+  ],
   "style": [
-    "file:mailchimp.css"
+    "file:index.css"
   ],
   "script": [
-    "https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js",
     "file:mailchimp.js"
   ]
 }
