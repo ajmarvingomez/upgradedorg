@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "dsa-richmond/mailchimp",
+	"title": "Mailchimp Block",
+	"render": "file:render.php",
+	"style": ["file:mailchimp.css"],
+	"script": [
+		"https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js",
+		"file:mailchimp.js"
+	]
+}

@@ -1,17 +1,16 @@
 {
 	"name": "dsarichmond",
-	"version": "3.0.2",
+	"version": "3.1.0",
 	"description": "Wordpress theme for Democratic Socialists of Richmond website",
-	"main": "gulpfile.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"css": "gulp css",
-		"css:compile": "gulp css:compile",
-		"css:watch": "gulp css:watch"
+		"build": "wp-scripts format && wp-scripts build --webpack-copy-php",
+		"watch": "wp-scripts start --webpack-copy-php",
+		"start": "npm run watch",
+		"format": "wp-scripts format"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kbdonnally/dsarichmond.git"
+		"url": "git+https://github.com/ajmarvingomez/upgradedorg"
 	},
 	"keywords": [
 		"wordpress",
@@ -19,19 +18,17 @@
 		"theme",
 		"dsa"
 	],
-	"author": "Katherine Donnally <kbdonnally@gmail.com>",
+	"author": "Richmond Democratic Socialists of America <admin@dsarichmond.org>",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/kbdonnally/dsarichmond/issues"
+		"url": "https://github.com/ajmarvingomez/upgradedorg/issues"
 	},
-	"homepage": "https://github.com/kbdonnally/dsarichmond#readme",
+	"homepage": "https://github.com/ajmarvingomez/upgradedorg/",
 	"devDependencies": {
-		"gulp": "^5.0.0",
-		"gulp-sass": "^5.0.0",
-		"sass": "^1.42.1"
+		"@wordpress/scripts": "^30.7.0"
 	},
 	"dependencies": {
-		"@wordpress/prettier-config": "^4.5.0",
-		"@wordpress/scripts": "^30.7.0"
+		"@wordpress/blocks": "^14.3.0",
+		"@wordpress/prettier-config": "^4.5.0"
 	}
 }

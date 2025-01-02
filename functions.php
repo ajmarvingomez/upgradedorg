@@ -155,6 +155,8 @@ add_action('widgets_init', 'dsarichmond_widgets_init');
 function dsarichmond_scripts()
 {
 	wp_enqueue_style('dsarichmond-style', get_stylesheet_uri(), array(), _S_VERSION);
+	wp_enqueue_style('main-style', get_stylesheet_directory_uri() . '/build/style-index.css', array(), _S_VERSION);
+
 	wp_style_add_data('dsarichmond-style', 'rtl', 'replace');
 
 	wp_enqueue_script('dsarichmond-navigation', get_parent_theme_file_uri('js/navigation.js'), array(), _S_VERSION, true);
@@ -194,7 +196,14 @@ if (defined('JETPACK__VERSION')) {
 
 /******* NEW CODE: ************/
 
-wp_enqueue_script('main', get_parent_theme_file_uri('assets/js/main.js'), [], _S_VERSION, ['strategy' => 'defer', 'in_footer' => true]);
+function register_blocks()
+{
+	register_block_type(get_template_directory() . '/build/custom-blocks/mailchimp');
+}
+
+add_action('init', 'register_blocks');
+
+wp_enqueue_script('main', get_parent_theme_file_uri('build/index.js'), [], _S_VERSION, ['strategy' => 'defer', 'in_footer' => true]);
 
 // Adding excerpt for page
 add_post_type_support('page', 'excerpt');
