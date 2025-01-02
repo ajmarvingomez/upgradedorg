@@ -3,9 +3,9 @@
 	"version": "3.1.0",
 	"description": "Wordpress theme for Democratic Socialists of Richmond website",
 	"scripts": {
-		"build": "wp-scripts format && wp-scripts build --webpack-copy-php",
-		"watch": "wp-scripts start --webpack-copy-php",
-		"start": "npm run watch",
+		"build": "wp-scripts format && wp-scripts build --webpack-copy-php && gulp css:compile",
+		"watch": "wp-scripts start --webpack-copy-php && gulp css:watch",
+		"start": "npm run watch && gulp css:watch",
 		"format": "wp-scripts format"
 	},
 	"repository": {
@@ -25,7 +25,10 @@
 	},
 	"homepage": "https://github.com/ajmarvingomez/upgradedorg/",
 	"devDependencies": {
-		"@wordpress/scripts": "^30.7.0"
+		"@wordpress/scripts": "^30.7.0",
+		"gulp": "^5.0.0",
+		"gulp-sass": "^5.0.0",
+		"sass": "^1.42.1"
 	},
 	"dependencies": {
 		"@wordpress/blocks": "^14.3.0",
